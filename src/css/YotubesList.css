@@ -1,0 +1,100 @@
+/* 국악 스타일의 배경과 텍스트 스타일 */
+.yotubes-container {
+    font-family: 'Nanum Myeongjo', serif;
+    color: #5e3c29;
+    text-align: center;
+    padding: 5%;
+}
+
+/* 헤더 스타일 */
+.yotubes-container h1 {
+    font-size: 2.5rem;
+    color: #a03e3e; /* 전통적인 붉은색 */
+    font-family: 'Nanum Brush Script', cursive;
+    margin-bottom: 40px;
+    position: relative;
+    left: 5px;
+}
+
+/* 유튜브 채널 방문 버튼 */
+.youtube-channel-button {
+    background-color: #6b4f2b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.youtube-channel-button:hover {
+    background-color: #8e6b47;
+}
+
+/* 영상 플레이어 스타일 */
+.video-player iframe {
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border: 3px solid #a03e3e;
+    width: 90%; /* 노트북 화면에서도 깨지지 않도록 조정 */
+    max-width: 700px;
+    height: auto;
+    aspect-ratio: 16 / 9; /* 반응형 유지 */
+}
+
+/* 영상 목록 스타일 */
+.video-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* 개별 영상 항목 */
+.video-item {
+    background-color: #ffffff;
+    padding: 10px;
+    width: 80%;
+    max-width: 300px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    text-align: center;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+/* 마우스 오버 시 효과 */
+.video-item:hover {
+    transform: scale(1.05);
+    background-color: #f2e1d4;
+}
+
+/* 선택된 영상 강조 */
+.video-item.selected {
+    border: 2px solid #a03e3e;
+    background-color: #f8f0eb;
+    font-weight: bold;
+}
+
+/* 반응형 적용 */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+        position: relative;
+        right: 5px;
+    }
+
+    .video-player iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    .video-item {
+        width: 90%;
+    }
+}

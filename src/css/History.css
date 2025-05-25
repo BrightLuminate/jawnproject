@@ -1,0 +1,165 @@
+/* src/css/History.css */
+
+.history-page {
+  display: flex;
+}
+
+.sidebar {
+  width: 200px;
+  padding: 20px;
+  align-self: flex-start;
+  position: relative;
+  top: 180px;
+  
+  z-index: 10; /* Make sure it stays on top */
+}
+
+.sidebar ul {
+  list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: 500;
+  /* color: #333; */
+  border-bottom: 1px solid #e0e0e0;
+}
+
+
+.sidebar li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.sidebar li a:hover {
+  color: #d9735b;
+}
+
+.sidebar li a:hover,
+.sidebar li.active a {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.content {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.banner {
+
+  width: 100vw; /* Full viewport width */
+  position: relative; /* Necessary for viewport width */
+  left: 45%; /* Moves element to the left edge of viewport */
+  top: -15px;
+  transform: translateX(-50%); /* Centers it in the viewport */
+  text-align: center;
+  padding: 90px;
+  background-image: url('../images/traditional.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.banner h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.banner p {
+  margin: 10px 0 0;
+  font-size: 1.2em;
+}
+
+.history-page {
+  display: flex;
+}
+
+.history {
+  flex-grow: 1;
+  max-width: 1000px; /* 필요하면 조정 */
+  padding: 20px;
+  margin: 0 auto; /* 가운데 정렬 */
+  position: relative;
+  right: 60px;
+}
+
+.history-decade {
+  margin-bottom: 20px;
+}
+
+.history-decade h2 {
+  font-size: 1.9em;
+  color: #007bff;
+  text-align: left;
+}
+
+.timeline {
+  position: relative;
+  margin: 20px 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: -255px;
+  bottom: 0;
+  left: 111px;
+  width: 2px;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.timeline-date {
+  width: 100px;
+  text-align: right;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.timeline-dot {
+  width: 10px;
+  height: 10px;
+  background: #888888;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+  position: relative;
+  right: 13px;
+}
+
+.timeline-content {
+  padding: 10px 20px;
+  text-align: left;
+  background: #f4f4f4;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex-grow: 1;
+  max-width: 800px; /* Adjust the maximum width as needed */
+}
+
+@media (max-width: 1200px) {
+  .history {
+    margin-left: 150px; /* 작은 화면에서는 왼쪽 여백 줄이기 */
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .history {
+    margin-left: 110px; /* 태블릿 및 작은 화면에서는 여백 제거 */
+    max-width: 50%;
+    padding: 10px;
+
+  }
+}

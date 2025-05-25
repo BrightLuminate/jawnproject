@@ -1,0 +1,226 @@
+/* EducationInquiry.css */
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Header Section */
+.program-header {
+    background: url('../images/hanuc.png') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.program-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.program-header p {
+    font-size: 1.2rem;
+    margin-top: 5;
+}
+
+/* Navigation Bar */
+.navbars ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbars ul li {
+    margin: 0 1rem;
+}
+
+.navbars ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+}
+
+.navbars ul li a:hover {
+    background-color:#f9f9f9;
+    border-radius: 5px;
+}
+
+/* Content Wrapper */
+.content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Section Titles */
+.program-section h2,
+.details-section h3,
+.overview-section h3,
+.recruitment-section h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #333;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 0.5rem;
+    text-align: left;
+}
+
+
+.registration-form {
+    text-align: left;
+}
+
+/* Section Paragraphs */
+.program-section p,
+.details-section p,
+.overview-section ul,
+.recruitment-section ul {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+/* Details List */
+.overview-section ul,
+.recruitment-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.overview-section ul li,
+.recruitment-section ul li {
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+.overview-section ul li strong,
+.recruitment-section ul li strong {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Buttons */
+.action-buttons {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.action-buttons button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    margin: 0 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.action-buttons button:hover {
+    background-color: #0056b3;
+}
+
+.course-levels {
+    margin: 2rem 0;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.course-levels h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.level {
+    margin-bottom: 2rem;
+}
+
+.level h4 {
+    font-size: 1.2rem;
+    color: #4a90e2;
+    text-align: left;
+}
+
+.level p, .level ul {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.level ul {
+    padding-left: 1.5rem;
+    list-style-type: disc;
+}
+
+
+/* 온라인 접수  */
+.registration-form {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.registration-form h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+button[type="submit"] {
+    background-color: #4a90e2;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #357ab8;
+}
+@media (max-width: 768px)
+{
+    .program-header h1 {
+        position: relative;
+        left:  5px;
+    }
+
+}

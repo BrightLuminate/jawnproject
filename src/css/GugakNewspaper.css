@@ -1,0 +1,109 @@
+.kukmin-sinmungo {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.kukmin-sinmungo-container {
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+
+.banners {
+    width: 100vw; /* Full viewport width */
+    position: relative; /* Necessary for viewport width */
+    left: 50%; /* Moves element to the left edge of viewport */
+    transform: translateX(-50%); /* Centers it in the viewport */
+    text-align: center;
+    padding: 50px;
+    background-image: url('../images/traditional.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    margin-bottom: 100px;
+}
+
+.banners h1 {
+    margin: 0;
+    font-size: 2em;
+    position: relative;
+    left:  -450px;
+    
+   
+}
+
+.kukmin-sinmungo-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px auto; /* 중앙 정렬을 위해 auto 사용 */
+    padding: 50px;
+    width: 70%; /* 가로 너비를 80%로 설정 */
+    max-width: 1200px; /* 최대 너비 설정 */
+    background: linear-gradient(to right, #800080, #dda0dd); /* 두 가지 보라색 그라데이션 */
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 120px;
+}
+
+.kukmin-sinmungo-image {
+    max-width: 300px;
+    border-radius: 8px;
+}
+
+.kukmin-sinmungo-text-container {
+    max-width: 300px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.kukmin-sinmungo-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #0044cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.kukmin-sinmungo-button:hover {
+    background-color: #0033aa;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .kukmin-sinmungo-box {
+        flex-direction: column;
+        width: 70%;
+        padding: 30px;
+    }
+
+    .banners {
+        padding: 30px;
+    }
+
+    .banners h1 {
+            margin: 0;
+            font-size: 2em;
+            position: relative;
+            left:  -190px;
+       
+    }
+
+    .kukmin-sinmungo-image {
+        max-width: 50%;
+    }
+    .kukmin-sinmungo-button {
+        position: relative;
+        left: 60px;
+    }
+}

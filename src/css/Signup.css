@@ -1,0 +1,67 @@
+.signup-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.signup-back{
+    background-image: url(../images/hanuc.png);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-size: cover;
+    background-position: center ; /* Adjusts the image position upwards */
+    background-repeat: no-repeat;
+}
+
+
+.signup-container div {
+  margin-bottom: 15px;
+}
+
+.signup-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.signup-container input {
+  width: 90%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.signup-container button {
+  padding: 15px 25px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 0; /* 버튼을 왼쪽으로 이동 */
+  text-align: left; /* 텍스트 정렬 (필요한 경우) */
+}
+
+.signup-container button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.signup-container .error {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 5px;
+  text-align: left; 
+  margin-left: 30px; /* 필요에 따라 조정 */
+}
+
+
+@media (max-width: 768px) {
+  .signup-container {
+    width: 90%;
+  }
+}

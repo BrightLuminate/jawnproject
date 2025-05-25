@@ -1,0 +1,172 @@
+/* Greeting.css */
+
+body {
+    font-family: 'Noto Sans KR', sans-serif; /* 한국어 폰트 적용 */
+    /* background-image: url("../images/hg2.png"); */
+    background-size: 1000px; /* 해금 크기 조정 */
+    
+    background-position: center; /* 중앙 정렬 */
+    opacity: 0.8; /* 투명도 조절 */
+    backdrop-filter: blur(1px); /* 흐림 효과로 콘텐츠 강조 */
+}
+
+
+h1 {
+    position: relative;
+    right: 480px; /* 필요 시 수정 */
+}
+
+.name {
+    font-size: 20px; /* 글자 크기 설정 */
+    font-weight: bold; /* 글자를 굵게 */
+    color: #003366; /* 진한 파란색으로 텍스트 색상 설정 */
+    margin: 10px 0; /* 상하 여백 설정 */
+    text-align: center; /* 텍스트 중앙 정렬 */
+    letter-spacing: 1px; /* 글자 간격 조정 */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* 약간의 그림자 효과 */
+}
+
+.greeting-container {
+    max-width: 100%; /* 가로폭 최대 설정 */
+    margin: 0 auto; /* 중앙 정렬 */
+    padding: 0px; /* 전체적인 여백 증가 */
+    color: #333; /* 텍스트 색상 설정 */
+    background-color: #fff; /* 흰색 배경 */
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* 섬세한 그림자 추가 */
+    border-radius: 10px; /* 둥근 모서리 */
+}
+
+.greeting-banner {
+    width: 100vw; /* Full viewport width */
+    position: relative; /* Necessary for viewport width */
+    left: 50%; /* Moves element to the left edge of viewport */
+    transform: translateX(-50%); /* Centers it in the viewport */
+    text-align: center;
+    padding: 70px;
+    background-image: url('../images/sos.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+
+.greeting-banner h1 {
+ 
+      margin: 0;
+            font-size: 2em;
+            position: relative;
+            left:  -470px;
+}
+
+.greeting-content {
+    margin-top: 5%; /* 콘텐츠 위 여백 증가 */
+    line-height: 1.8; /* 줄 높이 설정 */
+    padding: 90px 70px; /* 텍스트 주위 여백 */
+    display: flex; /* 텍스트와 이미지를 나란히 정렬 */
+    justify-content: center; /* 콘텐츠를 중앙 정렬 */
+    align-items:center; /* 상단 정렬 */
+    position: relative;
+    top: -200px;
+    left: 0px;
+}
+
+.greeting-text {
+    flex: 1; /* 남은 공간 차지 */
+    margin-right: 30px; /* 이미지와 텍스트 사이 여백 조정 */
+    max-width: 450px; /* 텍스트 영역 최대 너비 제한 */
+    text-align: left; /* 텍스트 왼쪽 정렬 */
+    padding: 20px; /* Adding padding for space around the text */
+   
+    border-radius: 8px; /* Rounded corners for a softer look */
+
+    color: #444; /* Darker text color for improved readability */
+}
+
+.greeting-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 이미지와 텍스트 중앙 정렬 */
+    margin-left: 150px; /* 텍스트와 이미지 사이의 간격 조정 (필요시 수정) */
+}
+
+.greeting-image {
+    width: 250px; /* 이미지 크기 설정 */
+    height: auto; /* 비율 유지 */
+    border-radius: 10px; /* 모서리 둥글게 */
+}
+
+.greeting-signature {
+    display: flex; /* 정렬을 위한 flexbox 사용 */
+    align-items: center; /* 세로 중앙 정렬 */
+    margin-top: 50px; /* 서명 위 여백 증가 */
+    padding: 30px; /* 서명 주위 여백 증가 */
+    background-color: #f5f5f5; /* 밝은 회색 배경 */
+    border-radius: 10px; /* 서명 둥글게 */
+}
+
+.greeting-signature p {
+    font-size: 22px; /* 글자 크기 증가 */
+    font-weight: bold; /* 글자를 굵게 */
+    margin: 0; /* 마진 0으로 설정 */
+}
+
+/* 소셜 미디어 아이콘 */
+.social-media-icons {
+    display: flex;
+    justify-content: center; /* 아이콘 중앙 정렬 */
+    margin: 20px 0; /* 아이콘 위아래 여백 증가 */
+}
+
+.social-media-icons a {
+    margin: 0 20px; /* 아이콘 간격 증가 */
+    color: #003366; /* 아이콘 색상 */
+    font-size: 26px; /* 아이콘 크기 증가 */
+}
+
+.social-media-icons a:hover {
+    color: #cc3300; /* 호버 시 색상 변경 */
+}
+
+
+/* Adjust main content to make room for the sidebar */
+
+@media (max-width: 768px) {
+    .greeting-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .sidebar {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .greeting-content {
+        flex-direction: column;
+        align-items: center;
+        top: 0;
+        left: 30px;
+    }
+    .social-media-icons{
+        position: relative;
+        right: 100px;
+    }
+    .name{
+        position: relative;
+        right: 100px;
+    }
+
+.greeting-image{
+    position: relative;
+        right: 100px;
+}
+.greeting-banner h1{
+
+      margin: 0;
+            font-size: 2em;
+            position: relative;
+            left:  -120px;
+}
+}

@@ -1,0 +1,236 @@
+/* Navbar styling */
+.navbar {
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Auth section styling */
+.auth {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    position: absolute;
+    top: 15px;
+    right: 50px;
+}
+
+.auth a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.auth .english {
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    position: relative;
+    top: -4px;
+    right: 10px;
+}
+
+/* Navbar container for logo and menu */
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px; /* Creates space between auth and menu */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    position: relative;
+    right:  180px;
+    color: #333; /* Default color */
+    text-decoration: none; /* Remove underline */
+}
+
+.logo img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+/* Menu items styling */
+.menu {
+    display: flex;
+    gap: 50px;
+    position: relative;
+    right: 50px;
+    
+    
+}
+
+.menu-item {
+    position: relative;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 8px 12px;
+}
+
+/* Only the active menu item is dark blue */
+.menu-item.active {
+    color: darkblue;
+}
+
+/* Dropdown styling */
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 0; /* Adjusted padding */
+    width: 150px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 1;
+    border-radius: 4px; /* Added border-radius */
+    margin-top: 5px; /* Added some space from the menu item */
+}
+/* Show dropdown on hover */
+.menu-item:hover .dropdown {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Dropdown item styling */
+.dropdown-item {
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    list-style: none;
+    color: #333; /* Default color */
+}
+
+.dropdown-item a {
+    color: #333;
+    text-decoration: none;
+    text-align: left; /* Align text to the left */
+    display: block;
+    width: 90%; /* Take full width for alignment */
+    padding: 8px 12px;
+}
+
+.dropdown-item a.active,
+.dropdown-item a:hover {
+    color: darkblue; /* Dark blue text color for active and hovered links */
+    border-radius: 5px;
+}
+
+/* Hamburger icon */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    z-index: 2;
+    transition: transform 0.2s ease-in-out;
+}
+
+.close-button:hover {
+    transform: scale(1.1);
+}
+
+.close-button {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    z-index: 3;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Mobile menu styles */
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+    }
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        width: 300px;
+        height: 100vh;
+        background-color: rgba(255, 255, 255, 0.95);
+        box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease-in-out;
+        z-index: 1000;
+        padding-top: 60px;
+    }
+    
+
+    .menu.open {
+        right: 0; /* Move the menu into view when open */
+    }
+
+    /* 모바일에서 햄버거 버튼 보이기 */
+    .hamburger {
+        display: block;
+    }
+
+    /* 모바일에서 닫기 버튼 보이기 */
+    .menu.open .close-button {
+        display: block;
+    }
+    /* Hide menu items on mobile until the hamburger is clicked */
+    .menu-item {
+        font-size: 18px;
+        padding: 10px 15px;
+    }
+
+    .dropdown {
+        width: 100%;
+        position: relative; /* Remove absolute positioning */
+        top: 10px; /* Remove top positioning */
+        left: auto; /* Remove left positioning */
+        box-shadow: none; /* Remove box shadow */
+        opacity: 1; /* Ensure it's visible in the mobile menu */
+        visibility: visible; /* Ensure it's visible */
+        background-color: transparent; /* 배경 없애기 */
+        align-items: center;
+        
+    }
+    /* 햄버거 버튼 스타일 */
+.hamburger {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    z-index: 2; /* 메뉴 위로 */
+}
+
+
+
+
+} 

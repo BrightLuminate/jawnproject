@@ -1,0 +1,117 @@
+/* Header Banner */
+.header-banner {
+  width: 100vw; /* Full viewport width */
+  height: 95vh; /* Full viewport height */
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Hide overflowing content */
+  position: relative; /* Allows absolute positioning for child elements */
+  display: flex; /* Optional: Center content inside */
+  align-items: center; /* Vertically center content */
+  justify-content: center; /* Horizontally center content */
+  top: -230px;
+}
+
+/* Banner Item */
+.banner-item {
+  width: 100%;
+  height: 100vh; /* Adjust height for a smaller vertical size */
+  background-size: cover;
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat;
+  transition: opacity 0.5s ease-in-out; /* Smooth transition effect */
+}
+
+/* Slick slider arrow styles */
+.slick-prev:before,
+.slick-next:before {
+  color: #ffff; /* Arrow color */
+}
+
+.slick-prev,
+.slick-next {
+  font-size: 24px; /* Arrow size adjustment */
+  z-index: 1; /* Display above banner items */
+}
+
+.slick-slider {
+  position: relative; /* Relative positioning for the slider */
+  width: 100%; /* Full width */
+}
+
+.banner-item-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center content */
+  color: white; /* Example text color */
+  text-align: center; /* Center align text */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .banner-item {
+    height: 50vh; /* Adjust height for smaller screens */
+  }
+}
+
+.slick-prev,
+.slick-next {
+  width: 40px; /* Width of the arrow */
+  height: 40px; /* Height of the arrow */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  border-radius: 50%; /* Round shape */
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center icon horizontally */
+  align-items: center; /* Center icon vertically */
+  transition: background-color 0.3s; /* Transition effect on hover */
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  background-color: rgba(255, 255, 255, 0.8); /* Change background on hover */
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 24px; /* Arrow icon size */
+  color: #fff; /* Arrow icon color */
+}
+
+.slick-prev {
+  left: 10px; /* Position from the left */
+  z-index: 1; /* Ensure it stays on top */
+  margin-top: 100px;
+}
+
+.slick-next {
+  right: 20px; /* Position from the right */
+  z-index: 1; /* Ensure it stays on top */
+  margin-top: 100px;
+}
+.slick-dots {
+  display: none !important;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .banner-item {
+    min-height: 50vh; /* Adjust height for smaller screens */
+  }
+  
+  .slick-prev,
+  .slick-next {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 20px;
+  }
+  
+  .banner-item-content {
+    padding: 10px;
+    font-size: 14px;
+  }
+}

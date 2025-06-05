@@ -2,41 +2,41 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes,Navigate } from "react-router-dom";
 import Navbar from "./components/Navbar.jsx";
 import HeaderBanner from "./components/HeaderBanner.js";
-import PerformanceList from "./components/PerformanceList";
-import Footer from "./components/Footer";
+import PerformanceList from "./components/PerformanceList.js";
+import Footer from "./components/Footer.js";
 // import Signup from "./components/Signup";
 // import Login from "./components/Login";
 // import PerformanceInfo from "./components/PerformanceInfo";
-import Greeting from "./components/Greeting";
-import History from "./components/History";
+import Greeting from "./components/Greeting.js";
+import History from "./components/History.js";
 
-import YotubesList from "./components/YotubesList";
-import Nationals from "./components/Nationals";
+import YotubesList from "./components/YotubesList.js";
+import Nationals from "./components/Nationals.js";
 
 
-import Curriculum from "./components/Curriculum";
-import Pricing from "./components/Pricing";
-import Online from "./components/Online";
+import Curriculum from "./components/Curriculum.js";
+import Pricing from "./components/Pricing.js";
+import Online from "./components/Online.js";
 
 // 원장 대화 
 
-import Communication from "./components/Communication";
-import WriteForm from "./components/WriteForm";
-import PasswordCheck from "./components/PasswordCheck";
-import PostDetail from "./components/PostDetail"; // ✅ PostDetail 추가
+import Communication from "./components/Communication.js";
+import WriteForm from "./components/WriteForm.js";
+import PasswordCheck from "./components/PasswordCheck.js";
+import PostDetail from "./components/PostDetail.js"; // ✅ PostDetail 추가
 
-import Curriculums from "./components/Curriculums";
-import Pricings from "./components/Pricings";
-import Onlines from "./components/Onlines";
+import Curriculums from "./components/Curriculums.js";
+import Pricings from "./components/Pricings.js";
+import Onlines from "./components/Onlines.js";
 
-import GugakNewspaper from "./components/GugakNewspaper";
+import GugakNewspaper from "./components/GugakNewspaper.js";
 
-import EducationInquiry from "./components/EducationInquiry";
-import GroupInquiry from "./components/GroupInquiry";
+import EducationInquiry from "./components/EducationInquiry.js";
+import GroupInquiry from "./components/GroupInquiry.js";
 
-import GugakChoirIntroduction from "./components/GugakChoirIntroduction";
-import KimYoungJaeIntroduction from "./components/KimYoungJaeIntroduction";
-import Sitemap from "./components/sitemap";
+import GugakChoirIntroduction from "./components/GugakChoirIntroduction.js";
+import KimYoungJaeIntroduction from "./components/KimYoungJaeIntroduction.js";
+import Sitemap from "./components/sitemap.js";
 
 import "./App.css";
 

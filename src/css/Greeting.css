@@ -65,12 +65,12 @@ h1 {
 .greeting-content {
     margin-top: 5%; /* 콘텐츠 위 여백 증가 */
     line-height: 1.8; /* 줄 높이 설정 */
-    padding: 90px 70px; /* 텍스트 주위 여백 */
+    padding: 10px 50px; /* 텍스트 주위 여백 */
     display: flex; /* 텍스트와 이미지를 나란히 정렬 */
     justify-content: center; /* 콘텐츠를 중앙 정렬 */
     align-items:center; /* 상단 정렬 */
     position: relative;
-    top: -200px;
+    top: -100px;
     left: 0px;
 }
 
@@ -146,7 +146,7 @@ h1 {
     .greeting-content {
         flex-direction: column;
         align-items: center;
-        top: 0;
+        top: -150px;
         left: 30px;
     }
     .social-media-icons{
@@ -167,6 +167,7 @@ h1 {
       margin: 0;
             font-size: 2em;
             position: relative;
-            left:  -120px;
+            left:  -110px;
+            top: -12px;
 }
 }

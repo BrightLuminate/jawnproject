@@ -1,0 +1,269 @@
+.gugak-choir-intro {
+  font-family: 'Noto Sans KR', Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.headers {
+  background-image: url('../images/traditio.jpg');
+  background-size: cover;
+  background-position: center;
+  /* text-align: center; */
+  padding: 50px 40px;
+  color: white;
+  width: 190% ;
+  position: relative;
+  right: 360px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.headers h1 {
+  font-size: 40px;
+  margin: 0;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  position: relative;
+  right: 580px;
+}
+
+.content {
+  padding: 20px;
+}
+.navbars {
+  position: sticky; /* 스크롤 시 상단에 고정 */
+  top: 0;
+  z-index: 100;
+  border-top: 2px solid #B0C2D4; /* 위 선 */
+  border-bottom: 2px solid#B0C2D4; /* 아래 선 */
+}
+
+
+.navbars ul {
+  display: flex;
+  justify-content: space-around; /* 메뉴 항목 간 간격을 균등 배치 */
+  align-items: center;
+  margin: 0;
+  padding: 8px 20px;
+  list-style: none; /* 기본 리스트 스타일 제거 */
+}
+
+.navbars ul li {
+  flex-grow: 1; /* 메뉴 간 간격을 동일하게 유지 */
+  text-align: center; /* 텍스트를 중앙 정렬 */
+}
+
+
+.navbars ul li a {
+  display: inline-block;
+  text-decoration: none; /* 밑줄 제거 */
+  font-size: 17px;
+  font-weight: 00; /* 텍스트 두께 조정 */
+  color:#7694B2;
+  padding: 10px 15px;
+  border-radius: 5px; /* 약간의 둥근 테두리 */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbars ul li a:hover {
+ 
+  color: #1b45af;
+}
+.navbars ul li a.active {
+
+  color: #1b45af;
+}
+
+
+.carousel {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  margin: 30px 0;
+  border-radius: 10px;
+}
+
+.carousel-image {
+  flex-grow: 1;
+}
+
+.carousel img {
+  width: 70%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel img:hover {
+  transform: scale(1.05);
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  z-index: 10;
+  transition: background-color 0.3s ease;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.prev {
+  left: 110px;
+}
+
+.next {
+  right: 110px;
+}
+
+.description {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  text-align: left;
+
+}
+
+.description h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #0056b3;
+  border-left: 5px solid #0056b3;
+  padding-left: 10px;
+}
+
+.description p {
+  font-size: 16px;
+}
+
+.description ul {
+  list-style: none;
+  padding: 0;
+}
+
+.description li {
+  font-size: 16px;
+  padding-left: 20px;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.description li:before {
+  content: '•';
+  color: #0056b3;
+  font-size: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.performance-info {
+  border-top: 2px solid #007bff;
+  padding-top: 20px;
+  margin-top: 40px;
+}
+
+.performance-info h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #0056b3;
+}
+
+.year-selector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.year-selector button {
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.year-selector button:hover {
+  background-color: #003f7f;
+}
+
+.year-selector span {
+  font-size: 18px;
+  color: #333;
+}
+
+.performance-thumbnails {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  
+}
+
+.performance-thumbnails img {
+  width: 240px;
+  height: 290px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.performance-thumbnails img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .headers h1 {
+
+      margin: 0;
+            font-size: 2em;
+            position: relative;
+        left:  -100px;
+  }
+
+  .navbars ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .navbars ul li a {
+    font-size: 14px; /* 모바일에서 글씨 크기 줄임 */
+    padding: 8px 12px;
+  }
+
+  .carousel img {
+    aspect-ratio: 16 / 9;
+  }
+
+  .performance-thumbnails img {
+    width: 200px;
+    height: 260px;
+  }
+
+  .year-selector button:active {
+    background-color: #003f7f;
+  }
+  .carousel img{
+    width: 100%;
+    height: auto;
+  }
+}

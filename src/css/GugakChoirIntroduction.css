@@ -10,7 +10,7 @@
   background-image: url('../images/traditio.jpg');
   background-size: cover;
   background-position: center;
-  text-align: center;
+  /* text-align: center; */
   padding: 50px 40px;
   color: white;
   width: 190% ;
@@ -118,9 +118,11 @@
 
 .prev:hover, .next:hover {
   background-color: rgba(0, 0, 0, 0.9);
+  
 }
 
 .prev {
+  
   left: 110px;
 }
 
@@ -236,9 +238,9 @@
   .header h1 {
 
       margin: 0;
-      font-size: 2em;
-      position: relative;
-      left:  -40px;
+            font-size: 2em;
+            position: relative;
+            left:  -130px;
   }
 
   .navbars ul {
@@ -266,4 +268,5 @@
     width: 100%;
     height: auto;
   }
+ 
 }

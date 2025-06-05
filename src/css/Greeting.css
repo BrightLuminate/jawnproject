@@ -170,4 +170,18 @@ h1 {
             left:  -110px;
             top: -12px;
 }
+.greeting-banner{
+     width: 100vw; /* Full viewport width */
+    position: relative; /* Necessary for viewport width */
+    left: 50%; /* Moves element to the left edge of viewport */
+    transform: translateX(-50%); /* Centers it in the viewport */
+    text-align: center;
+    padding: 50px;
+    background-image: url('../images/sos.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    margin-bottom: 50px;
+}
 }

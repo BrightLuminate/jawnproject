@@ -19,6 +19,12 @@
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+.description h1{
+  position: relative;
+  right: 440px;
+}
+
+
 .headers h1 {
   font-size: 40px;
   margin: 0;

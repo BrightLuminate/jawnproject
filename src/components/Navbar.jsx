@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSitemap,  faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 import logo from '../images/hegun copy.png';
+
 // The problematic line 'import Navbar from './components/Navbar.js';' has been removed
 // because this file itself defines the Navbar component.
 

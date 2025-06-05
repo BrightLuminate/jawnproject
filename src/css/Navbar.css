@@ -161,9 +161,12 @@
     z-index: 3;
     transition: transform 0.2s ease-in-out;
 }
-
 /* Mobile menu styles */
 @media (max-width: 768px) {
+    body {
+    overflow-x: hidden; /* Hides horizontal scrollbar */
+    width: 100%; /* Ensures body takes full width */
+}
     .navbar-container {
         flex-direction: column;
         align-items: center;
@@ -184,7 +187,7 @@
         z-index: 1000;
         padding-top: 60px;
     }
-    
+
 
     .menu.open {
         right: 0; /* Move the menu into view when open */
@@ -211,26 +214,30 @@
         top: 10px; /* Remove top positioning */
         left: auto; /* Remove left positioning */
         box-shadow: none; /* Remove box shadow */
-        opacity: 1; /* Ensure it's visible in the mobile menu */
-        visibility: visible; /* Ensure it's visible */
+        /* **IMPORTANT CHANGE:** Set opacity and visibility to hide it by default */
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease; /* Keep transition for smooth reveal */
         background-color: transparent; /* 배경 없애기 */
         align-items: center;
-        
     }
+
+    /* You'll need a class (e.g., .dropdown.open) to show it with JavaScript */
+    .dropdown.open {
+        opacity: 1;
+        visibility: visible;
+    }
+
     /* 햄버거 버튼 스타일 */
-.hamburger {
-    display: block;
-    background: none;
-    border: none;
-    font-size: 30px;
-    cursor: pointer;
-    position: absolute;
-    top: 40px;
-    right: 40px;
-    z-index: 2; /* 메뉴 위로 */
+    .hamburger {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 30px;
+        cursor: pointer;
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        z-index: 2; /* 메뉴 위로 */
+    }
 }
-
-
-
-
-} 

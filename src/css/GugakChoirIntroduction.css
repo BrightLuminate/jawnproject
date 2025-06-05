@@ -7,11 +7,11 @@
 }
 
 .header {
-  background-image: url('../images/light.jpg');
+  background-image: url('../images/traditio.jpg');
   background-size: cover;
   background-position: center;
   text-align: center;
-  padding: 40px 20px;
+  padding: 50px 40px;
   color: white;
   width: 190% ;
   position: relative;
@@ -236,9 +236,9 @@
   .header h1 {
 
       margin: 0;
-            font-size: 2em;
-            position: relative;
-            left:  -150px;
+      font-size: 2em;
+      position: relative;
+      left:  -40px;
   }
 
   .navbars ul {

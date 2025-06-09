@@ -105,6 +105,8 @@ h2 {
 @media (max-width: 768px) {
     .write-form {
         width: 90%;
+        position: relative;
+        right: 20px;
     }
     .form-actions {
         flex-direction: column;
@@ -115,3 +117,4 @@ h2 {
         margin: 5px 0;
     }
 }
+

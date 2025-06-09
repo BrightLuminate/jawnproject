@@ -4,10 +4,12 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import '../css/HeaderBanner.css'; 
 import image1 from '../images/Won1.jpeg'; 
+
 import image2 from '../images/Won2.jpeg'; 
 import image3 from '../images/Won3.jpeg'; 
 import image4 from '../images/Won4.jpeg'; 
 import image5 from '../images/Won5.jpeg'; 
+import image6 from '../images/Won7.jpeg'; 
 
 const HeaderBanner = () => {
   const banners = [
@@ -16,6 +18,7 @@ const HeaderBanner = () => {
     image3,
     image4,
     image5,
+       image6,
   ];
 
   const settings = {

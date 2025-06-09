@@ -163,15 +163,16 @@
 }
 /* Mobile menu styles */
 @media (max-width: 768px) {
-    body {
-    overflow-x: hidden; /* Hides horizontal scrollbar */
-    width: 100%; /* Ensures body takes full width */
-}
-    .navbar-container {
-        flex-direction: column;
-        align-items: center;
-        padding-top: 20px;
-    }
+html, body {
+    overflow-x: hidden;
+    width: 100vw;
+  }
+     .navbar-container {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+  }
+
     .menu {
         flex-direction: column;
         align-items: center;
@@ -208,20 +209,30 @@
         padding: 10px 15px;
     }
 
-    .dropdown {
-        width: 100%;
-        position: relative; /* Remove absolute positioning */
-        top: 10px; /* Remove top positioning */
-        left: auto; /* Remove left positioning */
-        box-shadow: none; /* Remove box shadow */
-        /* **IMPORTANT CHANGE:** Set opacity and visibility to hide it by default */
-        opacity: 0;
-        visibility: hidden;
-        transition: opacity 0.3s ease, visibility 0.3s ease; /* Keep transition for smooth reveal */
-        background-color: transparent; /* 배경 없애기 */
-        align-items: center;
+     .menu-item .dropdown.open {
+        opacity: 1;
+        visibility: visible;
+        max-height: 300px; /* 충분히 큰 값으로 설정하여 내용 보임 */
+        padding: 10px 0; /* 변경: 드롭다운이 열렸을 때만 패딩 추가 */
     }
 
+   .dropdown {
+        position: relative; /* 모바일 메뉴 내에서 상대 위치 */
+        top: auto;
+        left: auto;
+        box-shadow: none;
+        background-color: transparent;
+        /* 변경: 모바일 드롭다운이 닫혀있을 때 패딩은 0으로 유지 */
+        padding: 0; 
+        width: 100%;
+        opacity: 0;
+        visibility: hidden;
+        max-height: 0;
+        transition: opacity 0.3s ease, visibility 0.3s ease, max-height 0.3s ease;
+        align-items: center;
+        overflow: hidden; /* 초과 콘텐츠 숨김 */
+        box-sizing: border-box; /* 패딩이 너비에 포함되도록 */
+    }
     /* You'll need a class (e.g., .dropdown.open) to show it with JavaScript */
     .dropdown.open {
         opacity: 1;
@@ -239,5 +250,9 @@
         top: 40px;
         right: 40px;
         z-index: 2; /* 메뉴 위로 */
+    }
+    .logo{
+        position:relative;
+        right: 120px;
     }
 }

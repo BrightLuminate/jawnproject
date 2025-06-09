@@ -48,7 +48,7 @@ const KimYoungJaeIntroduction = () => {
     <div className='gugak-choir-main'>
       <div className="gugak-choir-intro">
         <header className="headers">
-          <h1>김영재류 해금산조 보존회</h1>
+      
         </header>
 
         <div className="content">

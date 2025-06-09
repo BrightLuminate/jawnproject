@@ -165,10 +165,10 @@ h1 {
 .greeting-banner h1{
 
       margin: 0;
-            font-size: 2em;
-            position: relative;
-            left:  -110px;
-            top: -12px;
+    font-size: 2em;
+    position: relative;
+    left:  -80px;
+    top: -12px;
 }
 .greeting-banner{
      width: 100vw; /* Full viewport width */
@@ -184,4 +184,8 @@ h1 {
     color: #fff;
     margin-bottom: 50px;
 }
+.greeting-text{
+    font-size: 15px;
+}
+
 }

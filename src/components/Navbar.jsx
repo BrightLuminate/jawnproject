@@ -1,12 +1,9 @@
 import React, { useState } from 'react';
 import '../css/Navbar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSitemap,  faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faSitemap, faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 import logo from '../images/hegun copy.png';
-
-// The problematic line 'import Navbar from './components/Navbar.js';' has been removed
-// because this file itself defines the Navbar component.
 
 const Navbar = () => {
     const [activeDropdown, setActiveDropdown] = useState(null);
@@ -30,16 +27,18 @@ const Navbar = () => {
     const DropdownMenu = ({ index, title, items }) => (
         <div className='menu-item' onClick={() => handleToggle(index)}>
             {title}
-            {activeDropdown === index && (
-                <ul className="dropdown">
-                    {items.map(({ name, path }) => (
-                        <li key={name} className={`dropdown-item ${activeDropdownItem === name ? 'active' : ''}`}
-                            onClick={() => handleDropdownItemClick(index, name)}>
-                            <Link to={path}>{name}</Link>
-                        </li>
-                    ))}
-                </ul>
-            )}
+            {/* 항상 렌더링하되, activeDropdown 상태에 따라 open 클래스 추가 */}
+            <ul className={`dropdown ${activeDropdown === index ? 'open' : ''}`}>
+                {items.map(({ name, path }) => (
+                    <li
+                        key={name}
+                        className={`dropdown-item ${activeDropdownItem === name ? 'active' : ''}`}
+                        onClick={() => handleDropdownItemClick(index, name)}
+                    >
+                        <Link to={path}>{name}</Link>
+                    </li>
+                ))}
+            </ul>
         </div>
     );
 
@@ -56,7 +55,7 @@ const Navbar = () => {
                     <img src={logo} alt="Logo" />
                     Ryu Jae Won
                 </Link>
-                
+
                 <div className={`menu ${isMobileMenuOpen ? 'open' : ''}`}>
                     {/* 닫기 버튼 (모바일 메뉴 내부) */}
                     {isMobileMenuOpen && (
@@ -71,7 +70,7 @@ const Navbar = () => {
                     ]} />
 
                     <DropdownMenu index={3} title="참여" items={[
-                       { name: '교수님과의 대화', path: '/Communication' },
+                        { name: '교수님과의 대화', path: '/Communication' },
                         { name: '국악신문사', path: '/gugak-newspaper' }
                     ]} />
 

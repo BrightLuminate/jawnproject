@@ -70,7 +70,7 @@ const GugakChoirIntroduction = () => {
     <div className='gugak-choir-main'>
       <div className="gugak-choir-intro">
         <header className="header">
-          <h1>국악창작악단</h1>
+   
         </header>
 
         <div className="content">

@@ -197,6 +197,8 @@ table td {
   .post-list {
     flex-direction: column;
     align-items: flex-start;
+    position: relative;
+    right: 10px;
   }
 
   .post-list p {
@@ -218,6 +220,7 @@ table td {
     text-align: center;
     font-size: 14px;
     padding: 12px;
+  
   }
   .pagination {
     display: flex; /* flexbox 사용 */

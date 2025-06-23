@@ -42,9 +42,10 @@ import jimage18 from '../images/jimage18.jpeg';
 // 공연 데이터
 
 const performances = [
+
   { id: 1, title: "술이 부작", date: "2024-07-12 | 19:30", location: "Wed, Jan 15",  imgSrc: gimage1, link: "#", isReservable: false, image: gimage1 },
   { id: 2, title: "우리의 소리로 찬송가의 역사를 노래하라", date: "2024-09-29 | 19:00", location: "Wed, Jan 15",  imgSrc: jimage1, link: "#", isReservable: false, image: jimage1 },
-  { id: 3, title: "국가무형유산 거문고 산조 김영재 소유자", date: "2024-06-26 | 19:00", location: "Wed, Jan 15",  imgSrc: gimage2, link: "#", isReservable: false, image: gimage2 },
+  { id: 3, title: "국가무형유산 거문고 산조 김영제 소유자", date: "2024-06-26 | 19:00", location: "Wed, Jan 15",  imgSrc: gimage2, link: "#", isReservable: false, image: gimage2 },
   { id: 4, title: "조선 왕들이사랑한 경기음악", date: "2024-10-23 | 19:00", location: "Wed, Jan 15",  imgSrc: jimage2, link: "#", isReservable: false, image: jimage2 },
   { id: 5, title: "현대에서 전통의 길을 걷다", date: "2021-09-28 | 19:30", location: "Wed, Jan 15", imgSrc: gimage3, link: "#", isReservable: false, image: gimage3 },
   { id: 6, title: "THE CALLING LOCUS 죽음과 축제", date: "2023-03-10 | 19:30", location: "Wed, Jan 15",  imgSrc: jimage3, link: "#", isReservable: false, image: jimage3 },

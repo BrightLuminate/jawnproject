@@ -35,9 +35,11 @@ import jimage16 from '../images/jimage16.jpeg';
 import jimage17 from '../images/jimage17.jpeg';
 import jimage18 from '../images/jimage18.jpeg';
 import jimage19 from '../images/jimage19.jpeg';
+import jimage20 from '../images/jimage20.png';
 
 
 const events = [
+  { id: 0, category: "국악 전통", title: "정조 애민사상을 경기도에 담다 ", date: "2025-06-27 ~ 28", time: "19:00", location:  "팔달 문화센타 예당마루", image: jimage20 },
   { id: 1, category: "국악 찬양", title: "세상은 교회가 되고 교회는 세상이 되다", date: "2025-05-16", time: "20:00", location: "청운교회비전홀", image: jimage19 },
   { id: 1, category: "국악 전통", title: "술이 부작", date: "2024-07-12", time: "19:30", location: "민속극장 풍류", image: gimage1 },
   { id: 2, category: "국악 찬양", title: "우리의 소리로 찬송가의 역사를 노래하라", date: "2024-09-29", time: "19:00", location: "청운교회 비전홀", image: jimage1 },

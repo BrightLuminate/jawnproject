@@ -43,7 +43,7 @@ const events = [
   { id: 1, category: "국악 찬양", title: "세상은 교회가 되고 교회는 세상이 되다", date: "2025-05-16", time: "20:00", location: "청운교회비전홀", image: jimage19 },
   { id: 1, category: "국악 전통", title: "술이 부작", date: "2024-07-12", time: "19:30", location: "민속극장 풍류", image: gimage1 },
   { id: 2, category: "국악 찬양", title: "우리의 소리로 찬송가의 역사를 노래하라", date: "2024-09-29", time: "19:00", location: "청운교회 비전홀", image: jimage1 },
-  { id: 3, category: "국악 전통", title: "국가무형유산 거문고 산조 김영재 소유자", date: "2024-06-26", time: "19:00", location: "민속극장 풍류", image: gimage2 },
+  { id: 3, category: "국악 전통", title: "국가무형유산 거문고 산조 김영제 소유자", date: "2024-06-26", time: "19:00", location: "민속극장 풍류", image: gimage2 },
   { id: 4, category: "국악 찬양", title: "조선 왕들이사랑한 경기음악", date: "2024-10-23", time: "19:00", location: "팔달 문화센터 예당마루", image: jimage2 },
   { id: 5, category: "국악 전통", title: "현대에서 전통의 길을 걷다", date: "2021-09-28", time: "19:30", location: "민속극장 풍류", image: gimage3 },
   { id: 6, category: "국악 찬양", title: "THE CALLING LOCUS 죽음과 축제", date: "2023-03-10", time: "19:30", location: "국립극장 해오름", image: jimage3 },

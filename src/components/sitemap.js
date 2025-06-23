@@ -36,7 +36,7 @@ const Sitemaps = () => {
                 <h2>연주단 소개</h2>
                 <ul>
                     <li><Link to="/gugak-choir-introduction">국악창작악단</Link></li>
-                    <li><Link to="/kim-young-jae-introduction">김영제산조보존회</Link></li>
+                    <li><Link to="/kim-young-jae-introduction">김영재산조보존회</Link></li>
                 </ul>
             </div>
 
@@ -45,3 +45,4 @@ const Sitemaps = () => {
 };
 
 export default Sitemaps;
+

@@ -77,8 +77,8 @@ const Navbar = () => {
                     <DropdownMenu index={4} title="국악찬양단" items={[
                         { name: '국악찬양단 소개', path: '/gugak-choir-introduction' },
                     ]} />
-                    <DropdownMenu index={5} title="김영재류 산조보존회" items={[
-                        { name: '김영재류 산조보존회 소개', path: '/kim-young-jae-introduction' }
+                    <DropdownMenu index={5} title="김영제류 산조보존회" items={[
+                        { name: '김영제류 산조보존회 소개', path: '/kim-young-jae-introduction' }
                     ]} />
                 </div>
 

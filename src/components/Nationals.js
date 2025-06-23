@@ -22,8 +22,8 @@ function National() {
         </div>
         
         <div className="ensemble-card" onClick={() => navigate("/kim-young-jae-introduction")}>
-          <img src={gugak3} alt="김영제산조보존회" />
-          <p>김영제산조보존회</p>
+          <img src={gugak3} alt="김영재산조보존회" />
+          <p>김영재산조보존회</p>
         </div>
       </div>
     </div>
@@ -31,3 +31,4 @@ function National() {
 }
 
 export default National;
+

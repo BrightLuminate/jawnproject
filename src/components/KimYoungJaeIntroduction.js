@@ -66,7 +66,7 @@ const KimYoungJaeIntroduction = () => {
           <section  className="description">
             
             
-            <h2>김영재산조보존회 소개</h2>
+            <h2>김영재류 해금산조보존회 소개</h2>
 
             <p>
               김영재류 해금산조보존회는 해금 명인 지영희 선생님으로부터 김영재 선생님에게 전수된 민속악의 정수를 보존하고 계승·발전시키기 위해 설립된 단체입니다.

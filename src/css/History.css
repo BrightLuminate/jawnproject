@@ -9,7 +9,7 @@
 
 .history-decade h2 {
   font-size: 1.9em;
-  color: #007bff;
+  color:crimson;
   text-align: left;
   margin-bottom: 20px;
 }
@@ -44,12 +44,13 @@
   text-align: right;
   margin-right: 20px;
   font-weight: bold;
+    color:crimson;
 }
 
 .timeline-dot {
   width: 10px;
   height: 10px;
-  background: #007bff;
+  background: crimson;
   border-radius: 50%;
   position: relative;
   z-index: 1;
@@ -71,7 +72,7 @@
   width: 100vw;
   position: relative;
   left: 45%;
-  top: -15px;
+  top: -65px;
   transform: translateX(-50%);
   text-align: center;
   padding: 90px;
@@ -138,7 +139,7 @@
   }
 
   .timeline-content {
-    width: 100%; /* Take full width */
+    width: 120%; /* Take full width */
     max-width: none; /* Remove max-width constraint */
     margin-left: 90px; /* Indent content to clear the line */
   }

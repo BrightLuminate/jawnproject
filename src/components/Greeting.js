@@ -12,7 +12,7 @@ const Greeting = () => {
             {/* Main Greeting Content */}
             <div className="greeting-container">
                 <div className="greeting-banner">
-                    <h1>인사말</h1>
+           
                 </div>
          
                 <div className="greeting-content" id="greeting">

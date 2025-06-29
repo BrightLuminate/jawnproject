@@ -9,7 +9,7 @@
 }
 
 h2 {
-  color: #1a237e;
+  color: crimson;
   text-align: left;
   margin-bottom: 20px;
 }
@@ -22,10 +22,11 @@ table {
 }
 
 table td {
-  padding: 15px;
+  padding: 10px;
   border: 1px solid #ddd;
   word-wrap: break-word; /* 긴 텍스트 자동 줄바꿈 */
   overflow-wrap: break-word;
+
 }
 
 table td:first-child {
@@ -36,7 +37,7 @@ table td:first-child {
 }
 
 table td:last-child {
-  width: 85%; /* 우측 내용 셀 너비 조정 */
+  width: 600%; /* 우측 내용 셀 너비 조정 */
 }
 
 .post-actions {
@@ -54,7 +55,7 @@ button {
 }
 
 .back-btn {
-  background: #1976d2;
+  background: green;
   color: white;
 }
 
@@ -88,10 +89,11 @@ button {
 
 @media (max-width: 768px) {
   .post-detail {
-    width: 95%; /* 모바일에서 더 넓게 표시 */
-    padding: 10px; /* 모바일에서 패딩 줄이기 */
+    width: 100%; /* 모바일에서 더 넓게 표시 */
+    padding: -15px; /* 모바일에서 패딩 줄이기 */
     position: relative;
     top: -50px;
+   
   }
 
   table {

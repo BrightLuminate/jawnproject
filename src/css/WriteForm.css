@@ -3,7 +3,7 @@
     width: 50%;
     margin: 40px auto;
     font-family: 'Arial', sans-serif;
-    color: #333;
+    color: crimson;
     padding: 25px;
     border-radius: 10px;
     position: relative;
@@ -12,13 +12,13 @@
 }
 
 /* 제목 스타일 */
-h2 {
+.corm {
     font-size: 32px;
     margin-bottom: 25px;
     text-align: left;
-    color: #0056b3;
+    color: crimson;
     font-weight: bold;
-    border-bottom: 3px solid #0056b3;
+    border-bottom: 3px solid crimson;
     padding-bottom: 10px;
 }
 
@@ -104,7 +104,7 @@ h2 {
 /* 반응형 스타일 */
 @media (max-width: 768px) {
     .write-form {
-        width: 90%;
+        width: 80%;
         position: relative;
         right: 20px;
     }
@@ -113,8 +113,11 @@ h2 {
         align-items: center;
     }
     .form-actions button {
-        width: 100%;
+        width: 80%;
         margin: 5px 0;
+        background-color: crimson;
+        position: relative;
+        right: -15px;
     }
 }
 

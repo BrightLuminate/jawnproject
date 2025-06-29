@@ -55,7 +55,7 @@ function Communication() {
 function PostList({ posts, onWriteClick, onSelect, currentPage, postsPerPage }) {
   return (
     <div className="post-lists">
-      <h2>교수님과의 대화 conversation</h2> 
+      <h2>교수님과의 대화</h2> 
           <p> 총 {posts.length}건 </p>
       <table>
         <thead>

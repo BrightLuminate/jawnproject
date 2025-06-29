@@ -19,7 +19,7 @@
     left: 50%; /* Moves element to the left edge of viewport */
     transform: translateX(-50%); /* Centers it in the viewport */
     text-align: center;
-    padding: 50px;
+    padding: 70px;
     background-image: url('../images/traditional.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -104,6 +104,6 @@
     }
     .kukmin-sinmungo-button {
         position: relative;
-        left: 60px;
+        left: 50px;
     }
 }

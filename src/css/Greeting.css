@@ -77,10 +77,10 @@ h1 {
 .greeting-text {
     flex: 1; /* 남은 공간 차지 */
     margin-right: 30px; /* 이미지와 텍스트 사이 여백 조정 */
-    max-width: 450px; /* 텍스트 영역 최대 너비 제한 */
+    max-width: 460px; /* 텍스트 영역 최대 너비 제한 */
     text-align: left; /* 텍스트 왼쪽 정렬 */
     padding: 20px; /* Adding padding for space around the text */
-   
+    font-weight: bold;
     border-radius: 8px; /* Rounded corners for a softer look */
 
     color: #444; /* Darker text color for improved readability */
@@ -160,7 +160,8 @@ h1 {
 
 .greeting-image{
     position: relative;
-        right: 100px;
+    right: 100px;
+    width: 80%;
 }
 .greeting-banner h1{
 
@@ -185,7 +186,16 @@ h1 {
     margin-bottom: 50px;
 }
 .greeting-text{
-    font-size: 15px;
+    font-size: 14px;
+     flex: 1; /* 남은 공간 차지 */
+    margin-right: 30px; /* 이미지와 텍스트 사이 여백 조정 */
+    max-width: 460px; /* 텍스트 영역 최대 너비 제한 */
+    text-align: left; /* 텍스트 왼쪽 정렬 */
+    padding: 60px; /* Adding padding for space around the text */
+    font-weight: bold;
+    border-radius: 8px; /* Rounded corners for a softer look */
+    font-weight: bold;
+    color: #444; /* Darker text color for improved readability */
 }
 
 }

@@ -1,7 +1,14 @@
 /* App Container */
 .App {
-  text-align: center;
-  overflow-x: hidden; /* Prevents horizontal overflow */
+ text-align: center;
+    overflow-x: hidden;
+    background-image: url("../src/images/groun7.jpg");
+
+    background-repeat: no-repeat;      /* 반복 방지 */
+    background-size: cover;            /* 화면 전체를 채우게 조절 */
+    background-position: center top;   /* 적당한 위치에서 시작 */
+    background-attachment: fixed;    
+  
 }
 
 /* Header */
@@ -115,4 +122,15 @@
   cursor: pointer;
 }
 
+@media (max-width: 768px) {
+  .App {
+    text-align: center;
+    overflow-x: hidden;
+    background-image: url("../src/images/groun7.jpg");
 
+    background-repeat: no-repeat;      /* 반복 방지 */
+    background-size: cover;            /* 화면 전체를 채우게 조절 */
+    background-position: center top;   /* 적당한 위치에서 시작 */
+    background-attachment: fixed;      /* 스크롤 시 배경 고정 */
+  }
+}

@@ -652,7 +652,7 @@ html, body {
         cursor: pointer;
         position: absolute;
         top: 40px;
-        right: 29px;
+        right: 39px;
         z-index: 2; /* 메뉴 위로 */
     }
     .logo{
@@ -661,7 +661,7 @@ html, body {
     }
     .logins{
         position: relative;
-        right: -5px;
+        right: 5px;
     }
 
 

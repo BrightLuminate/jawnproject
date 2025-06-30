@@ -80,12 +80,19 @@ const Navbar = () => {
                     <DropdownMenu index={5} title="김영재류 해금산조보존회 소개" items={[
                         { name: '김영재류 해금산조보존회 소개', path: '/kim-young-jae-introduction' }
                     ]} />
+                    <DropdownMenu index={6} title="The calling locus " items={[
+                        { name: 'The calling locus ', path: '/The-calling-locus' }
+                    ]} />
+
+
+                    
                 </div>
 
                 {/* 모바일 화면에서만 햄버거 버튼 표시 */}
                 <button className="hamburger" onClick={toggleMobileMenu} aria-label="메뉴 열기/닫기">
                     <FontAwesomeIcon icon={faBars} />
                 </button>
+                
             </div>
         </nav>
     );

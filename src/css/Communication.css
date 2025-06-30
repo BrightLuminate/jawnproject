@@ -54,7 +54,7 @@ h2 {
 .post-lists p {
   font-size: 19px;
   margin-bottom: 15px;
- color:green;
+ color:#004090;
   font-weight: bold;
   position: relative;
   left: 95%;
@@ -215,7 +215,8 @@ table td {
 
   .post-lists p {
     position: relative;
-    left:  300px;
+    left:  0px;
+
   }
 
   table {

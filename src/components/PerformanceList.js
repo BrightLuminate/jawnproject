@@ -12,7 +12,7 @@ import gimage8 from '../images/gimage8.jpeg';
 import gimage9 from '../images/gimage9.jpeg';
 import gimage10 from '../images/gimage10.jpeg';
 import gimage11 from '../images/gimage11.jpeg';
-
+import gimage12 from '../images/gimage12.jpg';
 
 
 //  국악 찬양 
@@ -36,11 +36,13 @@ import jimage17 from '../images/jimage17.jpeg';
 import jimage18 from '../images/jimage18.jpeg';
 import jimage19 from '../images/jimage19.jpeg';
 import jimage20 from '../images/jimage20.png';
-
+import jimage21 from '../images/jimage21.jpg';
 
 const events = [
-  { id: 0, category: "국악 전통", title: "정조 애민사상을 경기도에 담다 ", date: "2025-06-27 ~ 28", time: "19:00", location:  "팔달 문화센타 예당마루", image: jimage20 },
+  { id: 0, category: "국악 전통", title: "정조 애민사상을 경기도에 담다 ", date: "2025-06-27~28", time: "19:00", location:  "팔달 문화센타 예당마루", image: jimage20 },
+  { id: 0, category: "국악 전통", title: "2025 국가무형유산 거문고산조 김영재 보유자 공개행사 ", date: "2025-06-27", time: "19:00", location:  "한국의문화의 집 KOUS", image: jimage21 },
   { id: 1, category: "국악 찬양", title: "세상은 교회가 되고 교회는 세상이 되다", date: "2025-05-16", time: "20:00", location: "청운교회비전홀", image: jimage19 },
+ { id: 1, category: "국악 찬양", title: "국악찬양의 여정과 실천의 제 양상", date: "2025-02-28", time: "10:00-16:00", location: "백석예술대학교 예랑홀", image: gimage12 },
   { id: 1, category: "국악 전통", title: "술이 부작", date: "2024-07-12", time: "19:30", location: "민속극장 풍류", image: gimage1 },
   { id: 2, category: "국악 찬양", title: "우리의 소리로 찬송가의 역사를 노래하라", date: "2024-09-29", time: "19:00", location: "청운교회 비전홀", image: jimage1 },
   { id: 3, category: "국악 전통", title: "국가무형유산 거문고 산조 김영재 소유자", date: "2024-06-26", time: "19:00", location: "민속극장 풍류", image: gimage2 },
@@ -48,7 +50,7 @@ const events = [
   { id: 5, category: "국악 전통", title: "현대에서 전통의 길을 걷다", date: "2021-09-28", time: "19:30", location: "민속극장 풍류", image: gimage3 },
   { id: 6, category: "국악 찬양", title: "THE CALLING LOCUS 죽음과 축제", date: "2023-03-10", time: "19:30", location: "국립극장 해오름", image: jimage3 },
   { id: 7, category: "국악 전통", title: "정조의 르네상스를 노래하다", date: "2024-11-30", time: "19:00", location: "동탄복합문화센터 반석아트홀", image: gimage4 },
-  { id: 8, category: "국악 찬양", title: "Always Thanksgiving", date: "2022-10-30", time: "12:00", location: "청운교회", image: jimage4 },
+  { id: 8, category: "국악 찬양", title: "Always Thanksgiving", date: "2022-10-30", time: "12:00", location: "청운교회'비전홀", image: jimage4 },
   { id: 9, category: "국악 전통", title: "대헌민악회 정기연주회", date: "2024-10-03", time: "19:30", location: "민속극장 풍류", image: gimage5 },
   { id: 10, category: "국악 찬양", title: "세상 모든 소리로 찬양", date: "2022-05-29", time: "19:00", location: "청운교회 비전홀", image: jimage5 },
   { id: 11, category: "국악 전통", title: "박범훈류 피리산조 연주회 회형", date: "2023-11-25", time: "17:00", location: "국립국악원 예악당", image: gimage6 },
@@ -56,13 +58,13 @@ const events = [
   { id: 13, category: "국악 전통", title: "서사입은 가사", date: "2022-11-08", time: "19:30", location: "헤르만아트홀", image: gimage7 },
   { id: 14, category: "국악 찬양", title: " 여호와께 감사하라 ", date: "2018-10-28", time: "19:00", location: "영산아트홀", image: jimage7 },
   { id: 15, category: "국악 전통", title: "소프라노 박동희 성가 독창회", date: "2017-07-01", time: "19:30", location: "청운교회 비전홀", image: gimage8 },
-  { id: 16, category: "국악 찬양", title: "The Calling Locus Chapel 시대별 예배", date: "2018-06-17", time: "19:00", location: "한국문화의집 코우스", image: jimage8 },
-  { id: 17, category: "국악 전통", title: "전통에서 영성을 보다", date: "2016-12-16", time: "19:30", location: "청운교회 비전홀", image: gimage9 },
-  { id: 18, category: "국악 찬양", title: "The Calling Locus Chapel 예배하고 찬양하다", date: "2018-04-12", time: "20:00", location: "한국문화의집 코우스", image: jimage9 },
-  { id: 19, category: "국악 전통", title: "제 9-2회 류재원 해금 독주회", date: "2012-11-23", time: "19:30", location: "청운교회 비전혼", image: gimage10 },
-  { id: 20, category: "국악 찬양", title: "하나님 감사 합니다", date: "2012-10-22", time: "19:00", location: "영산아트홀", image: jimage10 },
-  { id: 21, category: "국악 전통", title: "라파앙상블 정기연주회", date: "2021-09-06", time: "19:30", location: "대덕교회 모리아 예볘당", image: gimage11 },
-  { id: 22, category: "국악 찬양", title: "대덕교회 창립 60주년 기념 음악회", date: "2017-09-22", time: "19:30", location: "청운교회 비전홀", image: jimage11 },
+  { id: 16, category: "국악 찬양", title: "The Calling Locus Chapel 시대별 예배", date: "2018-06-17", time: "19:00", location: "청운교회 비전홀", image: jimage8 },
+  { id: 17, category: "국악 전통", title: "전통에서 영성을 보다", date: "2016-12-16", time: "19:30", location: "한국문화의집 코우스", image: gimage9 },
+  { id: 18, category: "국악 찬양", title: "The Calling Locus Chapel 예배하고 찬양하다", date: "2018-04-12", time: "20:00", location: "청운교회 비전홀", image: jimage9 },
+  { id: 19, category: "국악 전통", title: "무사 전통을 연주하고 신학을 말하다", date: "2012-11-23", time: "19:30", location: "한국문화의집 코우스", image: gimage10 },
+  { id: 20, category: "국악 찬양", title: "하나님 감사합니다", date: "2012-10-22", time: "19:00", location: "청운교회비전홀", image: jimage10 },
+  { id: 21, category: "국악 전통", title: "라파앙상블 정기연주회", date: "2021-09-06", time: "19:30", location: "영산아트홀", image: gimage11 },
+  { id: 22, category: "국악 찬양", title: "대덕교회 창립60주년 기념음악회", date: "2017-09-22", time: "19:30", location: "대덕교회 모리아 예배당", image: jimage11 },
   { id: 24, category: "국악 찬양", title: "하나님의 사랑과 시험", date: "2017-06-18", time: "19:00", location: "청운교회 비전홀", image: jimage12 },
   { id: 26, category: "국악 찬양", title: "소명의 자리 찬양예배", date: "2016-10-09", time: "19:00", location: "청운교회 비전홀", image: jimage13 },
   { id: 28, category: "국악 찬양", title: "십자가에 목박힌 사람", date: "2016-04-24", time: "19:00", location: "청운교회비전홀", image: jimage14 },

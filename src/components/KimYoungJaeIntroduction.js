@@ -9,6 +9,7 @@ import gimage2 from '../images/gimage2.jpeg';
 
 import Footer from './Footer'; // Footer 컴포넌트 임포트
 
+import GYotubesLis from './GYotubesLis'; 
 
 const KimYoungJaeIntroduction = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -90,6 +91,7 @@ const KimYoungJaeIntroduction = () => {
               </li>
             </ul>
           </section>
+            <GYotubesLis />
 
           <section id="performance" className="performance-info">
             <h2>공연정보</h2>

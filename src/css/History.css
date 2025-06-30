@@ -148,4 +148,23 @@
   .history-decade .timeline::before {
     left: 80px; /* Keep line on the left */
   }
+
+  .banner {
+  width: 100vw;
+  position: relative;
+  left: 45%;
+  top: -100px;
+  transform: translateX(-50%);
+  text-align: center;
+  padding: 90px;
+  background-image: url('../images/traditional.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  margin-bottom: 50px;
 }
+}
+
+
+

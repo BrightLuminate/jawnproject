@@ -174,7 +174,7 @@
 }
 
 .performance-info {
-  border-top: 2px solid #007bff;
+  border-top: 2px solid #a03e3e;
   padding-top: 20px;
   margin-top: 40px;
 }
@@ -182,7 +182,7 @@
 .performance-info h2 {
   font-size: 24px;
   margin-bottom: 15px;
-  color:#003f7f;
+  color:#a03e3e;
   text-align: center;
 }
 

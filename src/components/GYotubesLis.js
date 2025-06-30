@@ -3,14 +3,14 @@ import "../css/YotubesList.css"; // 국악 스타일의 CSS 적용
 
 function GYotubesLis() {
   // 첫 번째 영상으로 요청한 영상 ID 설정
-  const [selectedVideo, setSelectedVideo] = useState("sp-ROyqWZCE");
+  const [selectedVideo, setSelectedVideo] = useState("ZnBsyIXikUQ?si=z6-uoPSazAHVZ6s_");
 
   // 영상 목록 추가
   const videos = [
 
   ];
 
-  const youtubeChannelLink = "https://www.youtube.com/@_thecallinglocus1442";
+  const youtubeChannelLink = "https://www.youtube.com/@kimyoungjaehaegeum";
 
   return (
     <div className="yotubes-container">

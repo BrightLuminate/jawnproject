@@ -186,7 +186,8 @@
 .performance-info h2 {
   font-size: 24px;
   margin-bottom: 15px;
-  color: #0056b3;
+  color:#003f7f;
+  text-align: center;
 }
 
 .year-selector {
@@ -261,9 +262,12 @@
   }
 
   .performance-thumbnails img {
-    width: 200px;
-    height: 260px;
+    width: 170px;
+    height: 190px;
+    position: relative;
+    right: 1px;
   }
+
 
   .year-selector button:active {
     background-color: #003f7f;

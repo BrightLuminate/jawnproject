@@ -10,8 +10,15 @@ import Footer from "./components/Footer.js";
 import Greeting from "./components/Greeting.js";
 import History from "./components/History.js";
 import Thecalling from "./components/Thecallinglocus.js";
-import YotubesList from "./components/YotubesList.js";
+
 import Nationals from "./components/Nationals.js";
+
+
+
+// 영상
+import YotubesList from "./components/YotubesList.js";
+import GYotubesLis from "./components/GYotubesLis.js"
+import CYotubesLis from "./components/CYotubesLis.js"
 
 
 import Curriculum from "./components/Curriculum.js";
@@ -54,6 +61,7 @@ function App() {
                 <HeaderBanner />
                 <PerformanceList />
                 <YotubesList/>
+             
                 <Nationals/>
                 <Footer />
               </>
@@ -66,6 +74,17 @@ function App() {
           <Route path="/WriteForm" element={<WriteForm />} />
           <Route path="/PasswordCheck" element={<PasswordCheck />} />
           <Route path="/PostDetail" element={<PostDetail />} />
+
+  
+
+
+          {/* 영상  */} 
+
+           <Route path="/GYotubesLis" element={ <GYotubesLis/>} />
+             <Route path="/CYotubesLis" element={ <CYotubesLis/>} />
+           <Route path="/YotubesList" element={  <YotubesList/>} />
+
+
 
           {/* 교육 문의  */}
           <Route path="/Curriculum" element={<Curriculum />} />

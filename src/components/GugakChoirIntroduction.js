@@ -24,6 +24,8 @@ import jimage19 from '../images/jimage19.jpeg';
 
 import Footer from './Footer'; // Footer 컴포넌트 임포트
 
+import YotubesList from './YotubesList';
+
 const GugakChoirIntroduction = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const images = [gugak1, gugak2];
@@ -109,6 +111,8 @@ const GugakChoirIntroduction = () => {
               <li>“소명의 자리” 국악찬양단 정기 연주회</li>
             </ul>
           </section>
+            <YotubesList />
+
 
           <section id="performance" className="performance-info">
             <h2>공연정보</h2>

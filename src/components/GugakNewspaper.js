@@ -8,7 +8,7 @@ const GugakNewspaper = () => {
         <div className="kukmin-sinmungo">
             <div className="kukmin-sinmungo-container">
                 <div className="banners">
-                    <h1>국민신문고</h1>
+        
                 </div>
                 <div className="kukmin-sinmungo-box">
                     <img src={sinmungoImage} alt="국민신문고" className="kukmin-sinmungo-image" />

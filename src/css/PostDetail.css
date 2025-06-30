@@ -99,7 +99,7 @@ button {
   .post-detail table {
     table-layout: auto; /* 테이블 열 크기 자동 조정 */
     position: relative;
-    right: 10px;
+    right: 20px;
   }
 
   table td {

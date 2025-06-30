@@ -3,7 +3,7 @@ import "../css/YotubesList.css"; // 국악 스타일의 CSS 적용
 
 function CYotubesLis() {
   // 첫 번째 영상으로 요청한 영상 ID 설정
-  const [selectedVideo, setSelectedVideo] = useState("sp-ROyqWZCE");
+  const [selectedVideo, setSelectedVideo] = useState("rkk7E7yjlKo?si=WgbGYNrmEuRsi8oP");
 
   // 영상 목록 추가
   const videos = [
@@ -30,6 +30,7 @@ function CYotubesLis() {
           width="560"
           height="315"
           src={`https://www.youtube.com/embed/${selectedVideo}`}
+      
           title="YouTube video player"
           frameBorder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"

@@ -88,8 +88,7 @@ const Thecalling = () => {
               <li>2023년 3월 국립극장 해오룸 10주년 기념공연 "죽음과 축제"</li>
             
               <li>유튜브 공연 영상 공개 (THe calling locus  "더콜링로커스") 
-                  <a href="https://www.youtube.com/watch?v=vGl67dFbPKM&utm_source=chatgpt.com">영상1</a>,
-                  <a href="https://www.youtube.com/watch?v=h9YvMxxouOA&utm_source=chatgpt.com">영상2</a>
+                  <a href="https://www.youtube.com/@_thecallinglocus1442">영상1</a>
               </li>
             </ul>
           </section>

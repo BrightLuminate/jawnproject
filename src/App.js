@@ -9,7 +9,7 @@ import Footer from "./components/Footer.js";
 // import PerformanceInfo from "./components/PerformanceInfo";
 import Greeting from "./components/Greeting.js";
 import History from "./components/History.js";
-
+import Thecalling from "./components/Thecallinglocus.js";
 import YotubesList from "./components/YotubesList.js";
 import Nationals from "./components/Nationals.js";
 
@@ -79,7 +79,7 @@ function App() {
           <Route path="/Onlines" element={<Onlines />} />
 
 
-
+         <Route path="/The-calling-locus" element={<Thecalling />} />   
           {/* Additional Routes */}
           {/* <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} /> */}

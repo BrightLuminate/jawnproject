@@ -43,6 +43,8 @@
     max-width: 700px;
     height: auto;
     aspect-ratio: 16 / 9; /* 반응형 유지 */
+    position: relative;
+    right: -10px;
 }
 
 /* 영상 목록 스타일 */
@@ -92,9 +94,13 @@
     .video-player iframe {
         width: 100%;
         height: auto;
+         position: relative;
+    right: 5px;
     }
 
     .video-item {
         width: 90%;
     }
+  
+
 }

@@ -1,46 +1,124 @@
+/*
+ * Sophisticated and Elegant Sitemap Style for a Korean Traditional Music Website
+ *
+ * This CSS enhances the sitemap's design with a refined color palette,
+ * improved typography, and subtle visual cues to create a modern yet
+ * culturally appropriate user experience.
+ */
+
+/* ===================================================================
+   1. 전체 컨테이너 (Overall Container)
+   =================================================================== */
 .sitemap-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 40px 20px;
+    max-width: 1200px; /* Increased max-width for a more spacious feel */
+    margin: 60px auto; /* More vertical margin for better separation */
+    padding: 60px; /* Increased padding inside the container */
+    background-color: #fcf9f5; /* A soft, warm background color */
+    border: 1px solid #e0d9c4; /* A very subtle, traditional border */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08); /* A soft, elegant shadow */
+    border-radius: 12px; /* Slightly rounded corners for a modern touch */
+    font-family: 'Noto Serif KR', 'Nanum Myeongjo', serif; /* Consistent traditional font */
     text-align: left;
 }
 
-h1 {
-    font-size: 28px;
-    font-weight: bold;
+/* ===================================================================
+   2. 메인 제목 (Main Title)
+   =================================================================== */
+.sitemap-container h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #3b281f; /* A deep, elegant brown */
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 50px; /* More space below the main title */
+    position: relative;
+    letter-spacing: 2px;
+    position: relative;
+    right: 550px;
 }
 
+/* A more refined decorative line under the main title */
+.sitemap-container h1::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background-color: #a36f4d; /* Bronze/gold accent color */
+    border-radius: 2px;
+}
+
+/* ===================================================================
+   3. 섹션 (Sections)
+   =================================================================== */
 .sitemap-section {
-    margin-bottom: 30px;
+    margin-bottom: 50px; /* Increased space between sections */
 }
 
+/* Section headings */
 .sitemap-section h2 {
-    font-size: 22px;
-    font-weight: bold;
-    margin-bottom: 15px;
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 5px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #5d4037; /* A warm, readable brown */
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 10px; /* Add padding for the decorative border */
+    letter-spacing: 1px;
 }
 
+/* Left-side decorative border for section headings */
+.sitemap-section h2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 6px; /* A thin, elegant border */
+    background-color: #b5835a; /* A traditional clay/ochre color */
+    border-radius: 3px;
+}
+
+/* ===================================================================
+   4. 링크 목록 (Link List)
+   =================================================================== */
 .sitemap-section ul {
     list-style-type: none;
-    padding: 0;
+    padding: 0 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid layout */
+    gap: 15px 30px; /* Gap between rows and columns */
 }
 
 .sitemap-section ul li {
-    margin-bottom: 10px;
+    margin-bottom: 0; /* Reset margin from the original code to use grid gap */
 }
 
+/* Individual link styles */
 .sitemap-section ul li a {
     text-decoration: none;
-    font-size: 18px;
-    color: #333;
-    transition: color 0.3s ease-in-out;
+    font-size: 19px;
+    color: #6a4a3c; /* A slightly softer text color */
+    padding: 12px 15px; /* More padding for a clickable area */
+    display: block; /* Make the entire link clickable */
+    border-radius: 8px; /* Soft corners on the hover background */
+    transition: all 0.3s ease-in-out;
+    position: relative; /* For pseudo-elements */
 }
 
+/* Hover effect for links */
 .sitemap-section ul li a:hover {
-    color: #007bff;
-    text-decoration: underline;
+    background-color: #f3e9d8; /* A light, traditional paper-like background on hover */
+    color: #3b281f; /* Change text color on hover for contrast */
+    transform: translateX(5px); /* Subtle horizontal slide effect */
+    text-decoration: none; /* Remove the underline on hover for a cleaner look */
+}
+
+/* Add a subtle icon or bullet point using a pseudo-element */
+
+
+/* Show the arrow on hover */
+.sitemap-section ul li a:hover::before {
+    left: 0; /* Slide in from the left */
+    opacity: 1; /* Fade in */
 }

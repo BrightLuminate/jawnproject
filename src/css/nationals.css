@@ -1,66 +1,151 @@
-/* 전체 컨테이너 스타일 */
+/*
+ * Sophisticated and Modern Style for Traditional Korean Music Site
+ *
+ * This CSS enhances the existing styles with more refined colors,
+ * subtle shadows, and modern typography to create a polished and
+ * contemporary look while maintaining a traditional aesthetic.
+ */
+
+/* ===================================================================
+   1. 전체 컨테이너 (Overall Container)
+   =================================================================== */
 .national-container {
-    padding: 50px;
-    text-align: center;
-    font-family: 'Noto Serif KR', serif; /* 전통적인 한글 폰트 */
-  }
-  
-  /* 제목 스타일 */
-  .title {
-    font-size: 32px;
-    font-weight: bold;
-    color: #7a2f2f; /* 전통적인 붉은 계열 색상 */
-    border-bottom: 3px solid #7a2f2f; /* 제목 아래 전통적인 라인 */
-    display: inline-block;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-  }
-  
-  /* 설명 텍스트 스타일 */
-  .description {
-    font-size: 18px;
-    color: #5a3e36;
-    margin-bottom: 40px;
-    line-height: 1.6;
-  }
-  
-  /* 연주단 카드 스타일 */
-  .ensemble-grid {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-  
-  /* 개별 카드 스타일 */
-  .ensemble-card {
-    background: white;
-    border: 3px solid #b5835a; /* 전통 황토색 테두리 */
-    border-radius: 15px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    width: 250px;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .ensemble-card:hover {
-    transform: translateY(-10px); /* 마우스 호버 시 약간 위로 떠오르는 효과 */
-  }
-  
-  /* 이미지 스타일 */
-  .ensemble-card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-bottom: 2px solid #b5835a;
-  }
-  
-  /* 카드 내 텍스트 스타일 */
-  .ensemble-card p {
-    font-size: 20px;
-    font-weight: bold;
-    color: #7a2f2f; /* 국악적인 느낌의 붉은 계열 */
-    padding: 15px;
-    background: linear-gradient(to bottom, #f4e9d8, #e3d5bf); /* 전통적인 한지 느낌의 그러데이션 */
-  }
-  
+  padding: 80px 40px; /* Increased padding for more breathing room */
+  text-align: center;
+  /* Use a modern serif font for a classic yet clean look.
+     'Noto Serif KR' is good, but let's add a fallback. */
+  font-family: 'Noto Serif KR', 'Nanum Myeongjo', serif;
+ 
+  position: relative; /* For the background texture */
+  overflow: hidden; /* To contain the background elements */
+}
+
+/* Add a subtle background texture (e.g., a faint paper or ink-wash effect) */
+.national-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Using a subtle pattern or image for a sophisticated feel */
+  background-image: url('data:image/svg+xml,...'); /* Replace with a real SVG or image */
+  background-repeat: repeat;
+  opacity: 0.1; /* Very subtle opacity */
+  z-index: 0;
+  pointer-events: none; /* Make sure it doesn't interfere with clicks */
+}
+
+/* ===================================================================
+   2. 제목 (Heading)
+   =================================================================== */
+.title {
+  font-size: 40px; /* Larger and more impactful title */
+  font-weight: 700; /* Bolder weight */
+  color: #3b281f; /* A deeper, richer brown for elegance */
+  position: relative;
+  display: inline-block;
+  padding-bottom: 15px; /* More space below the title */
+  margin-bottom: 25px;
+  letter-spacing: 2px; /* Add some letter spacing for a premium feel */
+}
+
+/* A more elegant, subtle line under the title */
+.title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px; /* Shorter line for a refined look */
+  height: 4px;
+  background-color: #a36f4d; /* A sophisticated bronze/gold color */
+  border-radius: 2px;
+}
+
+/* ===================================================================
+   3. 설명 텍스트 (Description Text)
+   =================================================================== */
+.description {
+  font-size: 19px;
+  color: #5d4037; /* A warm, readable brown */
+  max-width: 800px; /* Limit the width for better readability */
+  margin: 0 auto 60px; /* Center the paragraph and add more space below */
+  line-height: 1.8; /* Improved line height for legibility */
+  font-weight: 300; /* Lighter font weight for a clean look */
+}
+
+/* ===================================================================
+   4. 연주단 카드 (Ensemble Cards)
+   =================================================================== */
+.ensemble-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Increased gap between cards */
+  flex-wrap: wrap;
+}
+
+/* Individual Card Styles */
+.ensemble-card {
+  cursor: pointer; /* Indicate it's clickable */
+  background: #ffffff; /* Clean white background */
+  border: 1px solid #e0d9c4; /* A subtle, refined border color */
+  border-radius: 12px; /* Slightly softer corners */
+  /* A more sophisticated and subtle shadow */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08), 0 4px 8px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  width: 280px; /* Slightly wider cards */
+  transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.4s ease-in-out;
+  position: relative; /* For pseudo-elements */
+}
+
+/* Hover effect */
+.ensemble-card:hover {
+  transform: translateY(-15px) scale(1.03); /* More pronounced lift and slight scale */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15), 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Styles */
+.ensemble-card img {
+  width: 100%;
+  height: 200px; /* Slightly taller images */
+  object-fit: cover;
+  /* Soft transition for the image */
+  transition: transform 0.4s ease-in-out;
+}
+
+/* Image zoom on hover */
+.ensemble-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Card Text/Title Styles */
+.ensemble-card p {
+  font-size: 21px; /* Slightly larger text */
+  font-weight: 600; /* A bit bolder */
+  color: #3b281f; /* Consistent dark brown */
+  padding: 20px 15px; /* More padding */
+  /* A subtle, flat background color instead of a strong gradient */
+  background-color: #fcf9f5;
+  margin: 0;
+  letter-spacing: 0.5px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Add a subtle underline effect for the text on hover */
+.ensemble-card p::after {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%) scaleX(0);
+    width: 60%;
+    height: 3px;
+    background-color: #a36f4d; /* Bronze/gold color */
+    transition: transform 0.3s ease-out;
+}
+
+.ensemble-card:hover p::after {
+    transform: translateX(-50%) scaleX(1); /* Expand on hover */
+}

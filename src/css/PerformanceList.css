@@ -266,13 +266,13 @@
     }
 
     .event-card {
-        width: 250px;
+        width: 200px;
         position: relative;
         left:  90px;
     }
 
     .event-card img {
-        height: 320px;
+        height: 330px ;
     }
 
     .scroll-button {

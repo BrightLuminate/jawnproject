@@ -61,10 +61,7 @@ const PerformanceDetail = () => {
   // 카카오톡 오픈채팅방 링크
 
 
-  // "예매하기" 버튼 클릭 핸들러
-  const handleBookButtonClick = () => {
-    window.open( '_blank'); // 새 탭에서 링크 열기
-  };
+ 
 
   return (
     <div className="performance-detail-container">

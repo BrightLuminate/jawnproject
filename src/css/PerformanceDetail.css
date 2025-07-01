@@ -1,0 +1,130 @@
+/* Google Fonts에서 Noto Sans KR 폰트를 불러와 적용합니다. */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+
+/* 전체 컨테이너 스타일 */
+.performance-detail-container {
+  font-family: 'Noto Sans KR', sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  background-color: #0d0d0d;
+  min-height: 100vh;
+  box-sizing: border-box;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* 목록으로 돌아가기 링크 스타일 */
+.performance-detail-container .link {
+  display: inline-block;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #ff4a4a;
+  text-decoration: none;
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.performance-detail-container .link:hover {
+  transform: translateX(-5px);
+  text-decoration: underline;
+}
+
+/* 이미지 스타일 */
+.performance-detail-container img {
+  border-radius: 15px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+  transition: transform 0.5s ease;
+}
+
+.performance-detail-container img:hover {
+  transform: scale(1.02);
+}
+
+/* 메인 제목 스타일 */
+.performance-detail-container h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.2;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* 부제목 스타일 */
+.performance-detail-container h2 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #c0c0c0;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+/* 상세 정보 섹션 제목 스타일 */
+.performance-detail-container h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ff4a4a;
+  border-left: 5px solid #ff4a4a;
+  padding-left: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+/* 상세 정보 텍스트 스타일 */
+.performance-detail-container p,
+.performance-detail-container li {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #e0e0e0;
+  margin-bottom: 0.5rem;
+}
+
+.performance-detail-container p strong {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+/* 프로그램 목록 스타일 */
+.performance-detail-container ul {
+  list-style-type: none;
+  padding-left: 1.5rem;
+}
+
+.performance-detail-container ul li::before {
+  content: "•";
+  color: #ff4a4a;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+/* 미디어 쿼리 - 모바일 반응형 */
+@media (max-width: 768px) {
+  .performance-detail-container {
+    padding: 2rem 1rem;
+  }
+
+  .performance-detail-container h1 {
+    font-size: 2.5rem;
+  }
+
+  .performance-detail-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .performance-detail-container h3 {
+    font-size: 1.5rem;
+  }
+}
+
+/* 키프레임 애니메이션 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

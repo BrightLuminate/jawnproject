@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom"; // Import Link
 import "../css/PerformanceList.css";
-// 국악 
+// 국악
 import gimage1 from '../images/gimage1.jpeg';
 import gimage2 from '../images/gimage2.jpeg';
 import gimage3 from '../images/gimage3.jpeg';
@@ -15,7 +16,7 @@ import gimage11 from '../images/gimage11.jpeg';
 import gimage12 from '../images/gimage12.jpg';
 
 
-//  국악 찬양 
+// 국악 찬양
 import jimage1 from '../images/jimage1.jpeg';
 import jimage2 from '../images/jimage2.jpeg';
 import jimage3 from '../images/jimage3.jpeg';
@@ -72,8 +73,6 @@ const events = [
   { id: 30, category: "국악 찬양", title: "소명의자리 찬양예배", date: "2015-10-25 ", time: "19:00", location: "청운교회비전홀", image: jimage16 },
   { id: 31, category: "국악 찬양", title: "제2회 두번째 찬양 찬양으로 성자들을 만나다", date: "2015-01-11", time: "19:00", location: "청운교회비전홀", image: jimage17 },
   { id: 32, category: "국악 찬양", title: "PRAYER", date: "2014-06-09", time: "19:00", location: "청운교회비전홀", image: jimage18 },
-  
-
 ];
 
 
@@ -84,7 +83,7 @@ const PerformanceList = () => {
 
   const filteredEvents = selectedCategory === "All" ? events : events.filter(event => event.category === selectedCategory);
 
-  
+
   return (
     <div className="performance-list-container bg-[#0d0d0d] text-white p-10 text-center">
       {/* <h2 className="upcoming text-[#ff4a4a] italic text-lg">류재원교수님</h2> */}
@@ -110,27 +109,48 @@ const PerformanceList = () => {
       <div className="events-scroll-container overflow-x-auto whitespace-nowrap">
         <div className="events-grid flex flex-nowrap gap-6">
           {filteredEvents.map(event => (
-            <div key={event.id} className="event-card bg-[#161616] p-4 rounded-lg shadow-lg text-left w-60 inline-block">
-              <img src={event.image} alt={event.title} className="w-full h-40 object-cover rounded-md" />
-              <span className="category bg-[#ff4a4a] text-white text-xs px-3 py-1 rounded-full mt-3 inline-block">
-                {event.category}
-              </span>
-              <p className="date-time text-sm text-gray-400 mt-2">
-                <span role="img" aria-label="calendar">🗓</span> {event.date} •  
-                <span role="img" aria-label="clock">⏰</span> {event.time}
-              </p>
-              <h3 className="event-title text-lg font-semibold mt-1">{event.title}</h3>
-              <p className="location text-xs text-gray-500 mt-1">
-                <span role="img" aria-label="location">📍</span> {event.location}
-              </p>
-            </div>
+            // Conditionally wrap with Link if event.id is 0
+            event.id === 0 ? (
+              <Link to={`/performance/${event.id}`} key={event.id} className="event-card-link inline-block"> {/* Add a class name here */}
+                <div className="event-card bg-[#161616] p-4 rounded-lg shadow-lg text-left w-60">
+                  <img src={event.image} alt={event.title} className="w-full h-40 object-cover rounded-md" />
+                  <span className="category bg-[#ff4a4a] text-white text-xs px-3 py-1 rounded-full mt-3 inline-block">
+                    {event.category}
+                  </span>
+                  <p className="date-time text-sm text-gray-400 mt-2">
+                    <span role="img" aria-label="calendar">🗓</span> {event.date} •
+                    <span role="img" aria-label="clock">⏰</span> {event.time}
+                  </p>
+                  <h3 className="event-title text-lg font-semibold mt-1">{event.title}</h3>
+                  <p className="location text-xs text-gray-500 mt-1">
+                    <span role="img" aria-label="location">📍</span> {event.location}
+                  </p>
+                </div>
+              </Link>
+            ) : (
+              // For other events, keep the div without Link
+              <div key={event.id} className="event-card bg-[#161616] p-4 rounded-lg shadow-lg text-left w-60 inline-block">
+                <img src={event.image} alt={event.title} className="w-full h-40 object-cover rounded-md" />
+                <span className="category bg-[#ff4a4a] text-white text-xs px-3 py-1 rounded-full mt-3 inline-block">
+                  {event.category}
+                </span>
+                <p className="date-time text-sm text-gray-400 mt-2">
+                  <span role="img" aria-label="calendar">🗓</span> {event.date} •
+                  <span role="img" aria-label="clock">⏰</span> {event.time}
+                </p>
+                <h3 className="event-title text-lg font-semibold mt-1">{event.title}</h3>
+                <p className="location text-xs text-gray-500 mt-1">
+                  <span role="img" aria-label="location">📍</span> {event.location}
+                </p>
+              </div>
+            )
           ))}
         </div>
       </div>
 
-      
+
     </div>
   );
 };
 
-export default PerformanceList;
+export default  PerformanceList;

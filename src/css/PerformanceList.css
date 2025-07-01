@@ -1,3 +1,34 @@
+/* Add this to your PerformanceList.css */
+.event-card-link {
+    text-decoration: none; /* Removes the underline from the link */
+    color: inherit; /* Ensures the text color is inherited from its parent */
+}
+
+/* If you want to remove underline from the title itself (h3) within the link */
+.event-card-link .event-title {
+    text-decoration: none; /* Ensure no underline on the title */
+}
+
+/* If you want to remove underline from the date-time and location as well */
+.event-card-link .date-time,
+.event-card-link .location {
+    text-decoration: none;
+}
+
+/* Optional: Add hover effect if you still want some visual feedback on hover */
+.event-card-link:hover .event-title {
+    color: #ff4a4a; /* Example: Change title color on hover */
+}
+.event-card-link:hover .event-card {
+    transform: translateY(-5px); /* Example: Lift card slightly on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Enhance shadow on hover */
+}
+
+/* General card styles (ensure these are present and consistent with your design) */
+.event-card {
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
 /* 공연 리스트 컨테이너 */
 .performance-list-container {
     text-align: center;
@@ -35,6 +66,10 @@
     font-family: 'Nanum Brush Script', cursive;
     position: relative;
     right: 0px;
+}
+
+.p{
+    
 }
 
 /* 필터 버튼 컨테이너 */

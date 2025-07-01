@@ -122,3 +122,33 @@
     left: 0; /* Slide in from the left */
     opacity: 1; /* Fade in */
 }
+
+@media (max-width: 768px){
+
+.sitemap-container {
+    max-width: 1000px; /* Increased max-width for a more spacious feel */
+   
+    margin: 60px auto; /* More vertical margin for better separation */
+    padding: 60px; /* Increased padding inside the container */
+    background-color: #fcf9f5; /* A soft, warm background color */
+    border: 1px solid #e0d9c4; /* A very subtle, traditional border */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08); /* A soft, elegant shadow */
+    border-radius: 12px; /* Slightly rounded corners for a modern touch */
+    font-family: 'Noto Serif KR', 'Nanum Myeongjo', serif; /* Consistent traditional font */
+    text-align: left;
+}
+
+.sitemap-container h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #3b281f; /* A deep, elegant brown */
+    text-align: center;
+    margin-bottom: 50px; /* More space below the main title */
+    position: relative;
+    letter-spacing: 2px;
+    position: relative;
+    right: 100px;
+}
+
+
+}

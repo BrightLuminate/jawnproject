@@ -7,21 +7,18 @@ import calling4 from '../images/IMG4.jpeg';
 import calling5 from '../images/IMG5.jpeg';
 import calling6 from '../images/IMG6.jpeg';
 
-// import gimage1 from '../images/gimage1.jpeg';
-// import gimage2 from '../images/gimage2.jpeg';
+// Import the new CYotubesLis component
+import CYotubesLis from './CYotubesLis'; 
 
-import Footer from './Footer'; // Footer 컴포넌트 임포트
-
+import Footer from './Footer'; // Import Footer component
 
 const Thecalling = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const images = [calling1, calling2, calling3,calling4,calling5,calling6];
-  const [year, setYear] = useState(2025); // 선택된 년도를 상태로 관리
+  const images = [calling1, calling2, calling3, calling4, calling5, calling6];
+  const [year, setYear] = useState(2025); // State for the selected year
   const performanceImages = {
     // 2024: [gimage1, gimage2],
-  
   };
-  
 
   const handlePrev = () => {
     setCurrentSlide((prev) => (prev === 0 ? images.length - 1 : prev - 1));
@@ -40,11 +37,11 @@ const Thecalling = () => {
   }, [handleNext]);
 
   const handlePrevYear = () => {
-    setYear((prev) => (prev > 2024 ? prev - 1 : prev)); // 2022년 이하로 내려가지 않도록
+    setYear((prev) => (prev > 2024 ? prev - 1 : prev)); // Prevent going below 2024
   };
 
   const handleNextYear = () => {
-    setYear((prev) => (prev < 2025 ? prev + 1 : prev)); // 2024년 이상으로 올라가지 않도록
+    setYear((prev) => (prev < 2025 ? prev + 1 : prev)); // Prevent going above 2025
   };
 
   return (
@@ -68,8 +65,7 @@ const Thecalling = () => {
 
           <section  className="description">
             
-            
-            <h2>THe calling locus 소개</h2>
+            <h2>The calling locus 소개</h2>
 
             <p>
               "더콜링로커스" 팀은 국가무형유산, 서울무형유산 등을 이수한 이수자들과
@@ -86,13 +82,10 @@ const Thecalling = () => {
             <h2>공연실적</h2>
             <ul>
               <li>2023년 3월 국립극장 해오룸 10주년 기념공연 "죽음과 축제"</li>
-            
-              <li>유튜브 공연 영상 공개 (THe calling locus  "더콜링로커스") 
-                  <a href="https://www.youtube.com/@_thecallinglocus1442">영상1</a>
-              </li>
             </ul>
           </section>
-
+            <CYotubesLis />
+            
           <section id="performance" className="performance-info">
             <h2>공연정보</h2>
             <div className="year-selector">
@@ -106,9 +99,13 @@ const Thecalling = () => {
               ))}
             </div>
           </section>
+
+          {/* Place the new component here */}
+    
+
         </div>
       </div>
-      <Footer /> {/* Footer 컴포넌트를 추가합니다 */}
+      <Footer /> {/* Add the Footer component */}
     </div>
   );
 };

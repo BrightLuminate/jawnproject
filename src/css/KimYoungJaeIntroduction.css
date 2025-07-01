@@ -154,11 +154,13 @@
 
 .description p {
   font-size: 16px;
+     font-weight: bold;
 }
 
 .description ul {
   list-style: none;
   padding: 0;
+     font-weight: bold;
 }
 
 .description li {

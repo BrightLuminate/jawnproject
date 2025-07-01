@@ -172,7 +172,7 @@
 
 @media (max-width: 768px) {
     .App {
-        background-image: url("../src/images/groun7.jpg");
+       background-color: #fff;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center top;

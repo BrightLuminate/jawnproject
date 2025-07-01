@@ -7,6 +7,8 @@ import calling4 from '../images/IMG4.jpeg';
 import calling5 from '../images/IMG5.jpeg';
 import calling6 from '../images/IMG6.jpeg';
 
+import gimage5 from '../images/jimage20.png';
+
 // Import the new CYotubesLis component
 import CYotubesLis from './CYotubesLis'; 
 
@@ -17,7 +19,7 @@ const Thecalling = () => {
   const images = [calling1, calling2, calling3, calling4, calling5, calling6];
   const [year, setYear] = useState(2025); // State for the selected year
   const performanceImages = {
-    // 2024: [gimage1, gimage2],
+     2025: [gimage5],
   };
 
   const handlePrev = () => {

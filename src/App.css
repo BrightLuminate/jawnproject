@@ -150,42 +150,5 @@
   
 }
 }
-.App {
-    text-align: center;
-    overflow-x: hidden;
-    background-image: url("../src/images/groun7.jpg");
-    background-repeat: no-repeat;      /* 반복 방지 */
-    background-size: cover;            /* 화면 전체를 채우게 조절 */
-    background-position: center top;   /* 적당한 위치에서 시작 */
-    /* background-attachment: fixed; */ /* 이 줄을 제거하거나 주석 처리합니다. */
-}
-
-/* 기존 미디어 쿼리들은 .App에 대한 변경 사항이 없으므로 그대로 두셔도 됩니다. */
-@media (max-width: 1200px){
-    .App {
-        background-image: url("../src/images/groun7.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center top;
-    }
-}
-
-@media (max-width: 768px) {
-    .App {
-       background-color: #fff;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center top;
-    }
-}
-
-@media (max-width: 390px){
-    .App {
-        background-color: #fff;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center top;
-    }
-}
 
 

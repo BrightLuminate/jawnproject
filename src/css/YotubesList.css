@@ -1,7 +1,7 @@
 /* 국악 스타일의 배경과 텍스트 스타일 */
 .yotubes-container {
     font-family: 'Nanum Myeongjo', serif;
-    color: #5e3c29;
+    color: #3b281f;
     text-align: center;
     padding: 5%;
 }
@@ -18,7 +18,7 @@
 
 /* 유튜브 채널 방문 버튼 */
 .youtube-channel-button {
-    background-color: #6b4f2b;
+    background-color: #3b281f;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -38,7 +38,7 @@
     margin: 0 auto;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    border: 3px solid #a03e3e;
+    border: 3px solid #3b281f;
     width: 90%; /* 노트북 화면에서도 깨지지 않도록 조정 */
     max-width: 700px;
     height: auto;

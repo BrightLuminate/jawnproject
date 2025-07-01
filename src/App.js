@@ -1,8 +1,14 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes,Navigate } from "react-router-dom";
+
 import Navbar from "./components/Navbar.jsx";
 import HeaderBanner from "./components/HeaderBanner.js";
+
+
 import PerformanceList from "./components/PerformanceList.js";
+import PerformanceDetail from './components/PerformanceDetail.js';
+
+
 import Footer from "./components/Footer.js";
 // import Signup from "./components/Signup";
 // import Login from "./components/Login";
@@ -75,8 +81,8 @@ function App() {
           <Route path="/PasswordCheck" element={<PasswordCheck />} />
           <Route path="/PostDetail" element={<PostDetail />} />
 
-  
-
+          <Route path="/" element={<PerformanceList />} /> 
+          <Route path="/performance/:eventId" element={<PerformanceDetail />} />
 
           {/* 영상  */} 
 

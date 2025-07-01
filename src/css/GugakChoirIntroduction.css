@@ -11,7 +11,7 @@
   background-size: cover;
   background-position: center;
   /* text-align: center; */
-  padding: 50px 40px;
+  padding: 70px 40px;
   color: white;
   width: 190% ;
   position: relative;
@@ -239,9 +239,9 @@
   .header h1 {
 
       margin: 0;
-            font-size: 2em;
-            position: relative;
-            left:  75px;
+      font-size: 2em;
+      position: relative;
+      left:  75px;
   }
 
   .navbars ul {
@@ -279,4 +279,18 @@
 .next {
   right: 10px;
 }
+
+.header {
+  background-image: url('../images/traditio.jpg');
+  background-size: cover;
+  background-position: center;
+  /* text-align: center; */
+  padding: 50px 40px;
+  color: white;
+  width: 190% ;
+  position: relative;
+  right: 360px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
 }

@@ -87,10 +87,6 @@ const KimYoungJaeIntroduction = () => {
               <li>술이부작 거문고 창작의 세계</li>
               <li>국립국악원 연주 참여</li>
               <li>전통예술 계승을 위한 학술 및 공연 행사</li>
-              <li>유튜브 공연 영상 공개 (김영재류 해금 산조 연주) 
-                  <a href="https://www.youtube.com/watch?v=vGl67dFbPKM&utm_source=chatgpt.com">영상1</a>,
-                  <a href="https://www.youtube.com/watch?v=h9YvMxxouOA&utm_source=chatgpt.com">영상2</a>
-              </li>
             </ul>
           </section>
             <GYotubesLis />

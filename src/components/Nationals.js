@@ -4,6 +4,8 @@ import "../css/nationals.css";
 
 import gugak1 from "../images/gugak1.jpeg";
 import gugak3 from "../images/gugak3.jpeg";
+import gugak4 from "../images/IMG1.jpeg";
+
 
 function National() {
   const navigate = useNavigate(); // useNavigate 훅 사용
@@ -23,8 +25,15 @@ function National() {
         
         <div className="ensemble-card" onClick={() => navigate("/kim-young-jae-introduction")}>
           <img src={gugak3} alt="김영재류 해금산조보존회" />
-          <p>김영재류 해금산조보존회</p>
+          <p>김영재류 해금산조</p>
         </div>
+   
+        <div className="ensemble-card" onClick={() => navigate("/The-calling-locus")}>
+          <img src={gugak4} alt="The calling locus " />
+          <p>The calling locus </p>
+        </div>
+
+
       </div>
     </div>
   );

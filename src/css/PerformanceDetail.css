@@ -393,4 +393,11 @@ body {
     .description-text, .program-list li, .cast-info, .transportation-info {
         font-size: 0.95rem;
     }
+   .cast-images-grid img{
+    width: 100%;
+   }
+
+   .transportation-image-wrapper img{
+     width: 100%;
+   }
 }

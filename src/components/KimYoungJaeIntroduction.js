@@ -6,6 +6,7 @@ import gugak3 from '../images/gugak5.jpeg';
 
 import gimage1 from '../images/gimage1.jpeg';
 import gimage2 from '../images/gimage2.jpeg';
+import gimage3 from '../images/jimage21.jpg';
 
 import Footer from './Footer'; // Footer 컴포넌트 임포트
 
@@ -16,6 +17,7 @@ const KimYoungJaeIntroduction = () => {
   const images = [gugak1, gugak2, gugak3];
   const [year, setYear] = useState(2025); // 선택된 년도를 상태로 관리
   const performanceImages = {
+    2025: [gimage3],
     2024: [gimage1, gimage2],
   
   };

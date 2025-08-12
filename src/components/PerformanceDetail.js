@@ -4,6 +4,7 @@ import "../css/PerformanceDetail.css"; // CSS 파일 경로 확인
 
 // Import all images including jungo series
 import jimage20 from '../images/jimage20.png';
+import jimage21 from '../images/gimage13.jpeg';
 
 import jungo2 from '../images/jungo2.png';
 import jungo3 from '../images/jungo3.png';
@@ -12,11 +13,42 @@ import jungo5 from '../images/jungo5.png';
 import jungo6 from '../images/jungo6.png';
 import jungo7 from '../images/jungo7.png';
 import jungo8 from '../images/jungo8.png';
+import jungo9 from '../images/jungo9.png';
+import jungo10 from '../images/jungo10.png';
+import jungo11 from '../images/jungo11.png';
+
 
 // 상세 정보 추가된 전체 이벤트 목록
 const eventsWithDetails = [
+    // 다른 이벤트들도 필요하면 추가
   {
     id: 0,
+    category: "국악 전통",
+    title: "오래된 아름다움 앙상블된 아름 12가사",
+    date: "2025-08-22",
+    time: "19:30",
+    location: "전통공연창작마루",
+    image: jimage21, // 포스터 이미지로 가정
+    details: {
+      subtitle: "정가앙상블 이끌다 사옴",
+      duration: "정보없음",
+      organizer: "흉현수 12가사연구회",
+      host: "The Calling Locus",
+      director: "류재원",
+      // 출연진 텍스트 정보
+      cast: "흉현수, 박상진, 김성철, 류재원 (코러스: 흉현수, 이경연, 이가영, 안혜연 / 반주: 해금-김정우, 김소원, 김승리)",
+      program: ["총면목", "백구사", "이부사", "수양산가", "양양가", "길군악", "처사가", "상사별곡", "권주가", "황계사", "죽지사", "매화가"],
+      venue_address: "전통공연창작마루",
+      transportation: "정보없음",
+      description: "흉현수 12가사연구회는 2019년에 만들어진 정가앙상블 단체입니다. 국립국악원 우면산축제와 아시안게임 평창동계올림픽 문화행사 참여로 활동을 하였으며, 현재는 앙상블음악가와 정가의 전문가인 박윤식 교수님을 초빙하여 운영 중입니다. 흉현수 12가사연구회는 12가사 연주회를 더불어 노랫말이 없는 곡들도 연주하고 앙상블로 함께하는 음악을 만드는 것을 목표로 하고 있습니다. 또한, 이 시대와 소통할 수 있는 12가사 연구도 꾸준히 진행하고 있습니다. 많은 분들이 정가에 대해 이해하고 즐기실 수 있도록 노력할 것입니다.",
+      detailImages: [jimage21,jungo9, jungo10], // 제공된 이미지 파일에 맞게 수정
+      castImages: [jungo11], // 이미지 파일에 출연진 사진이 있지만, 변수가 따로 없어 일단 비워둠.
+      // transportationImage: null
+    }
+  },
+
+  {
+    id: 2,
     category: "국악 전통",
     title: "정조 애민사상을 경기도에 담다",
     date: "2025-06-27~28",
@@ -42,7 +74,8 @@ const eventsWithDetails = [
       transportationImage: jungo8 // 교통편 약도 이미지 추가 (jungo8)
     }
   },
-  // 다른 이벤트들도 필요하면 추가
+
+
 ];
 
 const PerformanceDetail = () => {
